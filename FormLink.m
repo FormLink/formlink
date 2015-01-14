@@ -39,7 +39,7 @@ RunForm::usage = "RunForm[script] runs script in FORM and writes the result to \
 
 ShowScript::usage = "ShowScript[script] displays script in an Output Cell format which can be copied easily.";
 
-ReadString::usage = "ReadString[str] imports str as \"Text\" and translates it to Mathematica syntax by using $Form2M."
+FLReadString::usage = "FLReadString[str] imports str as \"Text\" and translates it to Mathematica syntax by using $Form2M."
 
 FormLink::formlinknotfound = "The FormLink executable was not found here: `1`"
 
@@ -245,7 +245,7 @@ RunForm[script_List/;MatchQ[script,{__String}], fn_String, formexe_String:"", op
    which is not done by default (should it?)
    
 *)
-ReadString[fn_String] :=
+FLReadString[fn_String] :=
     StringReplace[Import[fn,"Text"], Prepend[$Form2M, "\n      "->""]];
 
 (* comment RM: linebreak-conversion-trouble fixed by Feng in FromRead.c, however, for RunForm we stil need this fix in toplevel Mathematica: *)

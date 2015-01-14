@@ -86,7 +86,7 @@ On ShortStats;\n                L res= (a+b+c)^5; \n                .sort\n   \
     \>\"", ",", "\[IndentingNewLine]", "\"\<tmp.frm\>\""}], "]"}], ";", "\n", 
    RowBox[{"result", " ", "=", " ", 
     RowBox[{"Form2M", "[", 
-     RowBox[{"ReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";", 
+     RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";", 
    "\[IndentingNewLine]", "result"}], "]"}]}], "Input",
  CellChangeTimes->{{3.564303592816618*^9, 3.5643036020842605`*^9}}],
 
@@ -199,7 +199,7 @@ Cell[BoxData[
       "\"\<tmp.frm\>\""}], "]"}], ";", "\n", 
     RowBox[{"result", " ", "=", " ", 
      RowBox[{"Form2M", "[", 
-      RowBox[{"ReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";", 
+      RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";", 
     "\[IndentingNewLine]", 
     RowBox[{"result", "//", "Length"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.56417117217229*^9, 3.564171190907361*^9}, {
@@ -271,7 +271,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"result", " ", "=", " ", 
        RowBox[{"Form2M", "[", 
-        RowBox[{"ReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";"}], 
+        RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";"}], 
      "*)"}], "\[IndentingNewLine]", 
     RowBox[{"(*", " ", 
      RowBox[{
@@ -384,7 +384,7 @@ Statistics;\n      L res= (a+b+c+d+e+f+g)^21;\n     .sort\n      #write \
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"Form2M", "[", 
-      RowBox[{"ReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}], ";"}], 
+      RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}], ";"}], 
     "*)"}], "\[IndentingNewLine]", 
    RowBox[{"result", "//", "Length"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.564171406214676*^9, 3.564171406670702*^9}}],
@@ -1409,7 +1409,7 @@ used      =     148600\\n    #write <o.txt> \\\"(%E)\\\", resFL\\n    .end\\n\
 Cell[BoxData[
  RowBox[{
   RowBox[{"out", "=", 
-   RowBox[{"ReadString", "[", "\"\<o.txt\>\"", "]"}]}], ";"}]], "Input"],
+   RowBox[{"FLReadString", "[", "\"\<o.txt\>\"", "]"}]}], ";"}]], "Input"],
 
 Cell[CellGroupData[{
 
