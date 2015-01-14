@@ -1,0 +1,202 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6455,        193]
+NotebookOptionsPosition[      5468,        153]
+NotebookOutlinePosition[      5870,        170]
+CellTagsIndexPosition[      5827,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"<<", "FormLink`"}], ";"}]], "Input",
+ CellChangeTimes->{{3.5553659462478848`*^9, 3.5553659592596292`*^9}, {
+  3.555380270039159*^9, 3.5553803050101595`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormStart", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.555365962456812*^9, 3.5553659947656603`*^9}, {
+  3.5553803202910333`*^9, 3.5553803281464825`*^9}}],
+
+Cell[BoxData[
+ FormBox["0", TraditionalForm]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "FormWrite", "[", 
+   "\"\<Indices li2,li3;\n          Vectors k1,k2,p,q;\n          Symbol \
+D,CA,CF,e,Gstrong,mc,r;\n          dimension D;\nauto index lor;\n\
+HEREISTHEERRORL ResultFormLink = \
+(CA*CF^2*e^2*Gstrong^4*r^4*d_(li2,li3)*d_(lor2,lor3)*(g_(1,k1)+mc*gi_(1))*g_(\
+1,lor3)*\n\
+(g_(1,k1)+g_(1,k2)+g_(1,p)-g_(1,q)+mc*gi_(1))*g_(1,lor4)*(g_(1,p)-g_(1,q)-mc*\
+gi_(1))*g5_(1)*\n\
+(g_(1,p)+g_(1,q)+mc*gi_(1))*g_(1,lor2)*(g_(1,k2)-mc*gi_(1))*g_(1,li2)*(g_(1,p)\
++g_(1,q)+mc*gi_(1))*g5_(1)*\n\
+(g_(1,p)-g_(1,q)-mc*gi_(1))*g_(1,lor1)*(-g_(1,k2)-2*g_(1,p)+mc*gi_(1))*g_(1,\
+li3));\ntracen,1;\ncontract 0;\n.sort\n#call put(\\\"%E\\\", ResultFormLink)\n\
+.sort\>\"", "]"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormPrompt", "[", "]"}]], "Input",
+ CellChangeTimes->{
+  3.5553774134417706`*^9, {3.5553803393001204`*^9, 3.555380339487131*^9}}],
+
+Cell[BoxData[
+ FormBox["0", TraditionalForm]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"out", "=", 
+   RowBox[{"FormRead", "[", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.550657387253808*^9, 3.5506574274541073`*^9}, {
+   3.550657510271844*^9, 3.550657514667095*^9}, {3.5506578924717045`*^9, 
+   3.5506578951898603`*^9}, 3.5553661494375067`*^9, {3.5553803434343567`*^9, 
+   3.555380348670656*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"FORM failed, Please check the following output: \"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0, 0],
+   FrontFaceColor->RGBColor[1, 0, 0],
+   BackFaceColor->RGBColor[1, 0, 0],
+   GraphicsColor->RGBColor[1, 0, 0],
+   FontColor->RGBColor[1, 0, 0]], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec \
+15 01:18:53 2012\\n    Off Statistics;\\n    \\n    #ifndef `PIPES_'\\n    \
+\\t#message \\\"No pipes found\\\";\\n    \\t.end;\\n    #endif\\n    \\n    \
+#if (`PIPES_' <= 0)\\n    \\t#message \\\"No pipes found\\\";\\n    \
+\\t.end;\\n    #endif\\n    \\n    #procedure put(fmt, mexp)\\n    \
+\\t#toexternal `fmt', `mexp'\\n    \\t#toexternal \\\"#THE-END-MARK#\\\"\\n   \
+ #endprocedure\\n    \\n    #setexternalattr shell=noshell\\n    #setexternal \
+`PIPE1_';\\n    #toexternal \\\"OK\\\"\\n    #fromexternal\\n    Indices \
+li2,li3;\\n              Vectors k1,k2,p,q;\\n              Symbol \
+D,CA,CF,e,Gstrong,mc,r;\\n              dimension D;\\n    auto index lor;\\n \
+   HEREISTHEERRORL ResultFormLink = \
+(CA*CF^2*e^2*Gstrong^4*r^4*d_(li2,li3)*d_(lor2,\\n    \
+lor3)*(g_(1,k1)+mc*gi_(1))*g_(1,lor3)*\\n    \
+(g_(1,k1)+g_(1,k2)+g_(1,p)-g_(1,q)+mc*gi_(1))*g_(1,lor4)*(g_(1,p)-g_(1,q)-mc*\
+gi_\\n    (1))*g5_(1)*\\n    \
+(g_(1,p)+g_(1,q)+mc*gi_(1))*g_(1,lor2)*(g_(1,k2)-mc*gi_(1))*g_(1,li2)*(g_(1,p)\
++g\\n    _(1,q)+mc*gi_(1))*g5_(1)*\\n    \
+(g_(1,p)-g_(1,q)-mc*gi_(1))*g_(1,lor1)*(-g_(1,k2)-2*g_(1,p)+mc*gi_(1))*g_(1,\
+li3)\\n    );\\nexternalchannel Line 6 --> Unrecognized statement\\n    \
+tracen,1;\\n    contract 0;\\n    .sort\\n    #call put(\\\"%E\\\", \
+ResultFormLink)\\nput Line 3 ==> ResultFormLink is not an expression\\n    \
+.sort\\n    .end\\nProgram terminating at  --> \\n  0.00 sec out of 0.03 \
+sec\\n\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   StyleBox[
+    RowBox[{"LinkObject", "::", "linkd"}], "MessageName"], 
+   RowBox[{
+   ":", " "}], "\<\"Unable to communicate with closed link \
+\[NoBreak]\\!\\(TraditionalForm\\`\\(LinkObject[\\(\\(\\\"\\\\\\\"G:\\\\\\\\\
+unizh\\\\\\\\workunizh\\\\\\\\FormLink\\\\\\\\bin\\\\\\\\windows\\\\\\\\\
+FormLink.exe\\\\\\\"\\\", 4218, 7\\)\\)]\\)\\)\[NoBreak]. \\!\\(\\*ButtonBox[\
+\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/LinkObject/linkd\\\", ButtonNote -> \
+\\\"LinkObject::linkd\\\"]\\)\"\>"}], TraditionalForm]], "Message", "MSG"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["out"], "Input"],
+
+Cell[BoxData[
+ FormBox["$Failed", TraditionalForm]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormStop", "[", "All", "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox["128", TraditionalForm]], "Output"]
+}, Open  ]]
+},
+WindowSize->{707, 834},
+WindowMargins->{{96, Automatic}, {-9, Automatic}},
+ShowSelection->True,
+Magnification->1.4000002145767212`,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 192, 4, 42, "Input"],
+Cell[CellGroupData[{
+Cell[774, 28, 178, 3, 42, "Input"],
+Cell[955, 33, 56, 1, 41, "Output"]
+}, Open  ]],
+Cell[1026, 37, 727, 15, 583, "Input"],
+Cell[CellGroupData[{
+Cell[1778, 56, 153, 3, 42, "Input"],
+Cell[1934, 61, 56, 1, 41, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2027, 67, 348, 7, 42, "Input"],
+Cell[CellGroupData[{
+Cell[2400, 78, 325, 8, 30, "Print"],
+Cell[2728, 88, 1784, 30, 1279, "Print"]
+}, Open  ]],
+Cell[4527, 121, 633, 12, 57, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5197, 138, 29, 0, 42, "Input"],
+Cell[5229, 140, 62, 1, 41, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5328, 146, 63, 1, 42, "Input"],
+Cell[5394, 149, 58, 1, 41, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

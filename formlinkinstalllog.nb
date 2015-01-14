@@ -1,0 +1,483 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     16497,        474]
+NotebookOptionsPosition[     15236,        426]
+NotebookOutlinePosition[     15643,        443]
+CellTagsIndexPosition[     15600,        440]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Import", "[", "\"\<http://www.feyncalc.org/formlink/install.m\>\"", 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Downloading done, installing now to \"\>", 
+    "\[InvisibleSpace]", 
+    StyleBox["\<\"C:\\\\Users\\\\Rolf \
+Mertig\\\\AppData\\\\Roaming\\\\Mathematica\\\\Applications\"\>",
+     StripOnInput->False,
+     FontWeight->"Bold"]}],
+   SequenceForm["Downloading done, installing now to ", 
+    Style[
+    "C:\\Users\\Rolf Mertig\\AppData\\Roaming\\Mathematica\\Applications", 
+     FontWeight -> "Bold"]],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox["\<\"Installation of FormLink and FeynCalcFormLink done.\"\>", 
+  TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox["\<\"Please notice that FORM 4.0 executables originating from \
+http://www.nikhef.nl/~form/maindir/binaries/binaries.html have been installed \
+too, and \\nthat you are bound to agree to the license terms as explained \
+here http://www.nikhef.nl/~form/license/license.html before using \
+FORM.\\nMost prominently you should  refer to the FORM publication \
+(J.A.M.Vermaseren \\\"New features of FORM\\\" math-ph/0010025) when you use \
+(Par)(T)FORM in scientific publications.\"\>", TraditionalForm]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Loading FormLink and FeynCalcFormLink", "Subsection",
+ GeneratedCell->True,
+ CellAutoOverwrite->True],
+
+Cell[BoxData[
+ FormBox["\<\"Loading FeynCalcFormLink and FormLink by: \\n \
+<<FeynCalcFormLink`\"\>", TraditionalForm]], "Print"],
+
+Cell[CellGroupData[{
+
+Cell["Get[\"FeynCalcFormLink`\"]", "Input",
+ GeneratedCell->True,
+ CellAutoOverwrite->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\"The basic functions are FormLink and FeynCalcFormLink.\"\>", 
+  TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox["\<\"running now two simple examples:  \\n\"\>", 
+  TraditionalForm]], "Print"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+FormLink[ \"    AutoDeclare vector p;
+               Local T = g_(0, p1,p2,p3,p4,p5,p6);
+               trace4 0;
+          \"   (*, Form2M -> Identity *) (* <-- uncommenting returns a string \
+*)
+        ];\
+\>", "Input",
+ GeneratedCell->True,
+ CellAutoOverwrite->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
+Mathematica: \"\>", "\[InvisibleSpace]", "0.`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "FORM and FormRead finished, time needed before translating to \
+Mathematica: ", 0., " sec"],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
+    "\[InvisibleSpace]", "0.1925`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "Translation done. Total wall clock time needed: ", 0.1925, " sec"],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p6"}], " ", 
+    RowBox[{"p2", ".", "p5"}], " ", 
+    RowBox[{"p3", ".", "p4"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p5"}], " ", 
+    RowBox[{"p2", ".", "p6"}], " ", 
+    RowBox[{"p3", ".", "p4"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p2"}], " ", 
+    RowBox[{"p3", ".", "p4"}], " ", 
+    RowBox[{"p5", ".", "p6"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p6"}], " ", 
+    RowBox[{"p2", ".", "p4"}], " ", 
+    RowBox[{"p3", ".", "p5"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p4"}], " ", 
+    RowBox[{"p2", ".", "p6"}], " ", 
+    RowBox[{"p3", ".", "p5"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p5"}], " ", 
+    RowBox[{"p2", ".", "p4"}], " ", 
+    RowBox[{"p3", ".", "p6"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p4"}], " ", 
+    RowBox[{"p2", ".", "p5"}], " ", 
+    RowBox[{"p3", ".", "p6"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p6"}], " ", 
+    RowBox[{"p2", ".", "p3"}], " ", 
+    RowBox[{"p4", ".", "p5"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p3"}], " ", 
+    RowBox[{"p2", ".", "p6"}], " ", 
+    RowBox[{"p4", ".", "p5"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p2"}], " ", 
+    RowBox[{"p3", ".", "p6"}], " ", 
+    RowBox[{"p4", ".", "p5"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p5"}], " ", 
+    RowBox[{"p2", ".", "p3"}], " ", 
+    RowBox[{"p4", ".", "p6"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p3"}], " ", 
+    RowBox[{"p2", ".", "p5"}], " ", 
+    RowBox[{"p4", ".", "p6"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p2"}], " ", 
+    RowBox[{"p3", ".", "p5"}], " ", 
+    RowBox[{"p4", ".", "p6"}]}], "+", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p4"}], " ", 
+    RowBox[{"p2", ".", "p3"}], " ", 
+    RowBox[{"p5", ".", "p6"}]}], "-", 
+   RowBox[{"4", " ", 
+    RowBox[{"p1", ".", "p3"}], " ", 
+    RowBox[{"p2", ".", "p4"}], " ", 
+    RowBox[{"p5", ".", "p6"}]}]}], TraditionalForm]], "Print"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+FeynCalcFormLink[ DiracTrace[GA[\[Mu], \[Nu], \[Rho], \[Sigma], \[Tau], \
+\[Alpha]]] ]\
+\>", "Input",
+ GeneratedCell->True,
+ CellAutoOverwrite->True],
+
+Cell["\<\
+AutoDeclare Index lor;
+Format Mathematica;
+L resFL = (g_(1,lor2)*g_(1,lor3)*g_(1,lor4)*g_(1,lor5)*g_(1,lor6)*g_(1,lor1));
+trace4,1;
+contract 0;
+.sort;
+#call put(\"%E\", resFL)
+#fromexternal\
+\>", "Program",
+ GeneratedCell->True,
+ CellAutoOverwrite->True,
+ LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ GraphicsColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FontFamily->"Courier",
+ FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\"Piping the script to FORM and running FORM\"\>", 
+  TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.`", 
+    "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
+Mathematica as a string.\"\>"}],
+   SequenceForm[
+   "Time needed by FORM : ", 0., 
+    " seconds. FORM finished. Got the result back to Mathematica as a \
+string."],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
+  TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
+    "0.12`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+and FeynCalc finished.\"\>"}],
+   SequenceForm[
+   "Total wall clock time used: ", 0.12, 
+    " seconds. Translation to Mathematica and FeynCalc finished."],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[Cell[BoxData[
+    FormBox[
+     RowBox[{
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Rho]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Rho]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Mu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Sigma]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Rho]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Sigma]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Sigma]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Tau]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Tau]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Sigma]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Sigma]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Mu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Tau]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Sigma]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Tau]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Tau]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Mu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Nu]", "\[Sigma]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Rho]", "\[Tau]"}]]}], "+", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Sigma]", "\[Tau]"}]]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Alpha]", "\[Nu]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Mu]", "\[Rho]"}]], " ", 
+       SuperscriptBox["g", 
+        RowBox[{"\[Sigma]", "\[Tau]"}]]}]}], TraditionalForm]],
+    DefaultFormatType->TraditionalForm],
+   ExpressionCell[
+   4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Tau]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Sigma]] 
+     HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], \
+$CellContext`\[Rho]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Sigma]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\[Tau]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\[Rho]] - 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Tau]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Rho]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\
+\[Sigma]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Rho]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Tau]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\
+\[Sigma]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Sigma]] 
+     HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\[Rho]]
+       HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\
+\[Tau]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Rho]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Sigma]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\[Tau]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Tau]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Nu]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], $CellContext`\
+\[Sigma]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], \
+$CellContext`\[Nu]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\[Tau]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], $CellContext`\
+\[Sigma]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Mu]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\
+\[Tau]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], $CellContext`\
+\[Sigma]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Sigma]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\[Nu]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], \
+$CellContext`\[Tau]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Nu]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Sigma]] 
+     HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], \
+$CellContext`\[Tau]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], \
+$CellContext`\[Mu]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], \
+$CellContext`\[Sigma]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Rho], \
+$CellContext`\[Tau]] + 
+    4 HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Rho]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\
+\[Nu]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Sigma], $CellContext`\
+\[Tau]] - 4 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], \
+$CellContext`\[Nu]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Mu], $CellContext`\[Rho]] 
+    HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Sigma], $CellContext`\
+\[Tau]] + 4 
+     HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Alpha], $CellContext`\
+\[Mu]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Nu], $CellContext`\
+\[Rho]] HighEnergyPhysics`FeynCalc`MT`MT[$CellContext`\[Sigma], $CellContext`\
+\[Tau]], DefaultFormatType -> TraditionalForm]], TraditionalForm]], "Print"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1394, 1226},
+WindowMargins->{{-2575, Automatic}, {28, Automatic}},
+ShowSelection->True,
+Magnification->1.0999996662139893`,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 111, 2, 32, "Input"],
+Cell[693, 26, 512, 13, 23, "Print"],
+Cell[1208, 41, 116, 2, 23, "Print"],
+Cell[1327, 45, 533, 7, 62, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1897, 57, 107, 2, 46, "Subsection"],
+Cell[2007, 61, 129, 2, 43, "Print"],
+Cell[CellGroupData[{
+Cell[2161, 67, 91, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[2277, 73, 119, 2, 23, "Print"],
+Cell[2399, 77, 102, 2, 43, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2550, 85, 280, 9, 101, "Input"],
+Cell[CellGroupData[{
+Cell[2855, 98, 379, 9, 23, "Print"],
+Cell[3237, 109, 329, 7, 23, "Print"],
+Cell[3569, 118, 2083, 62, 43, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[5679, 184, 159, 5, 32, "Input"],
+Cell[5841, 191, 651, 17, 172, "Program"],
+Cell[CellGroupData[{
+Cell[6517, 212, 107, 2, 23, "Print"],
+Cell[6627, 216, 414, 10, 23, "Print"],
+Cell[7044, 228, 115, 2, 23, "Print"],
+Cell[7162, 232, 402, 9, 23, "Print"],
+Cell[7567, 243, 7641, 179, 44, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

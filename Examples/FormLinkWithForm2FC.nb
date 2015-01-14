@@ -1,0 +1,821 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     28101,        812]
+NotebookOptionsPosition[     26541,        755]
+NotebookOutlinePosition[     27232,        780]
+CellTagsIndexPosition[     27147,        775]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<FormLink`\>\"", "]"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormLink", "[", 
+  "\"\<\n\t\t\tIndices li2,li3;\n\t\t\tVectors k1,k2,p,q;\n\t\t\tSymbol \
+D,CA,CF,e,Gstrong,mc,r;\n\t\t\tdimension D;\n\t\t\tauto index lor;\n\t\t\tL \
+ResultFormLink = \
+(CA*CF^2*e^2*Gstrong^4*r^4*d_(li2,li3)*d_(lor2,lor3)*(g_(1,k1)+mc*gi_(1))*g_(\
+1,lor3)*\n                               \
+(g_(1,k1)+g_(1,k2)+g_(1,p)-g_(1,q)+mc*gi_(1))*g_(1,lor4)*(g_(1,p)-g_(1,q)-mc*\
+gi_(1))*g5_(1)*\n                               \
+(g_(1,p)+g_(1,q)+mc*gi_(1))*g_(1,lor2)*(g_(1,k2)-mc*gi_(1))*g_(1,li2)*(g_(1,p)\
++g_(1,q)+mc*gi_(1))*g5_(1)*\n                               \
+(g_(1,p)-g_(1,q)-mc*gi_(1))*g_(1,lor1)*(-g_(1,k2)-2*g_(1,p)+mc*gi_(1))*g_(1,\
+li3));\n\t\t\ttracen,1;\n\t\t\tcontract 0;\n\t\t\t.sort\n\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.56403118194331*^9, 3.5640312200483637`*^9}, 
+   3.56403126675943*^9, {3.56417096570548*^9, 3.5641710205736184`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
+Mathematica: \"\>", "\[InvisibleSpace]", "0.156`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "FORM and FormRead finished, time needed before translating to \
+Mathematica: ", 0.156, " sec"],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
+    "\[InvisibleSpace]", "1.1388`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "Translation done. Total wall clock time needed: ", 1.1388, " sec"],
+   Editable->False], TraditionalForm]], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   TagBox[
+    PanelBox[GridBox[{
+       {
+        StyleBox[
+         StyleBox[
+          DynamicBox[ToBoxes[
+            FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+            TraditionalForm],
+           ImageSizeCache->{453., {4., 14.}}],
+          StripOnInput->False,
+          DynamicUpdating->True], "Panel",
+         StripOnInput->False,
+         Background->None]},
+       {
+        ItemBox[
+         TagBox[
+          RowBox[{
+           RowBox[{"16", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"Pair", "(", 
+             RowBox[{"lor1", ",", "lor4"}], ")"}], " ", 
+            SuperscriptBox["mc", "8"]}], "-", 
+           RowBox[{"8", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"Pair", "(", 
+             RowBox[{"lor1", ",", "lor4"}], ")"}], " ", 
+            SuperscriptBox["mc", "8"]}], "+", 
+           RowBox[{"32", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"k1", "(", "lor1", ")"}], " ", 
+            RowBox[{"k1", "(", "lor4", ")"}], " ", 
+            SuperscriptBox["mc", "6"]}], "+", 
+           RowBox[{"\[LeftSkeleton]", "2881", "\[RightSkeleton]"}], "+", 
+           RowBox[{"128", " ", 
+            SubscriptBox["C", "A"], " ", 
+            RowBox[{"\[LeftSkeleton]", "7", "\[RightSkeleton]"}], " ", 
+            RowBox[{"q", "(", "lor1", ")"}], " ", 
+            RowBox[{"q", "(", "lor4", ")"}]}], "-", 
+           RowBox[{"32", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"k1", ".", "p"}], " ", 
+            RowBox[{"k2", ".", "k2"}], " ", 
+            RowBox[{"q", ".", "q"}], " ", 
+            RowBox[{"q", "(", "lor1", ")"}], " ", 
+            RowBox[{"q", "(", "lor4", ")"}]}], "-", 
+           RowBox[{"128", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"k1", ".", "k2"}], " ", 
+            RowBox[{"k2", ".", "p"}], " ", 
+            RowBox[{"q", ".", "q"}], " ", 
+            RowBox[{"q", "(", "lor1", ")"}], " ", 
+            RowBox[{"q", "(", "lor4", ")"}]}], "-", 
+           RowBox[{"64", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            RowBox[{"k1", ".", "k2"}], " ", 
+            RowBox[{"p", ".", "p"}], " ", 
+            RowBox[{"q", ".", "q"}], " ", 
+            RowBox[{"q", "(", "lor1", ")"}], " ", 
+            RowBox[{"q", "(", "lor4", ")"}]}]}],
+          Short[#, 5]& ],
+         Background->GrayLevel[1],
+         BaseStyle->{Deployed -> False},
+         Frame->True,
+         FrameStyle->GrayLevel[0, 0.2],
+         StripOnInput->False]},
+       {
+        RowBox[{
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+              TraditionalForm],
+             ImageSizeCache->{82., {1., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 64, 29669370532194178666, 5/2],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+              TraditionalForm],
+             ImageSizeCache->{91., {1., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 64, 29669370532194178666, 5 2],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+              TraditionalForm],
+             ImageSizeCache->{138., {4., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 64, 29669370532194178666, Infinity],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+              TraditionalForm],
+             ImageSizeCache->{116., {1., 13.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          ButtonFunction:>FrontEndExecute[{
+             FrontEnd`SetOptions[
+             FrontEnd`$FrontEnd, 
+              FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+             FrontEnd`FrontEndToken["PreferencesDialog"]}],
+          Evaluator->None,
+          Method->"Preemptive"]}]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxDividers->{
+       "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[1.2]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     DefaultBaseStyle->{},
+     FrameMargins->5],
+    Deploy,
+    DefaultBaseStyle->"Deploy"],
+   Out[64]], TraditionalForm]], "Output",
+ LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ GraphicsColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FontFamily->"Courier",
+ FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"%", "//", "Variables"}], "//", "InputForm"}]], "Input"],
+
+Cell["\<\
+{CA, CF, e, Gstrong, mc, r, k1[lor1], k1[lor4], p . p, k2 . k2, k2 . p, k2 . \
+q, p . q, q . q, 
+ k2[lor1], D, k1 . k2, k1 . p, k1 . q, k2[lor4], k1 . k1, p[lor1], p[lor4], \
+Pair[lor1, lor4], 
+ q[lor1], q[lor4]}\
+\>", "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"<<", "FeynCalcFormLink`"}]], "Input",
+ CellChangeTimes->{3.564171036533531*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Form2FC"}]], "Input"],
+
+Cell[BoxData[
+ StyleBox["\<\"Form2FC[str] translates str to FeynCalc syntax. Form2FC has an \
+option Replace.\"\>", "MSG"]], "Print", "PrintUsage",
+ CellTags->"Info3564523085-4378480"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"res", "=", 
+  RowBox[{"FormLink", "[", 
+   RowBox[{
+   "\"\<\nIndices li2,li3;\nVectors k1,k2,p,q;\nSymbol \
+D,CA,CF,e,Gstrong,mc,r;\ndimension D;\nauto index lor;\nL ResultFormLink = \
+(CA*CF^2*e^2*Gstrong^4*r^4*d_(li2,li3)*d_(lor2,lor3)*(g_(1,k1)+mc*gi_(1))*g_(\
+1,lor3)*\n   \
+(g_(1,k1)+g_(1,k2)+g_(1,p)-g_(1,q)+mc*gi_(1))*g_(1,lor4)*(g_(1,p)-g_(1,q)-mc*\
+gi_(1))*g5_(1)*\n   \
+(g_(1,p)+g_(1,q)+mc*gi_(1))*g_(1,lor2)*(g_(1,k2)-mc*gi_(1))*g_(1,li2)*(g_(1,p)\
++g_(1,q)+mc*gi_(1))*g5_(1)*\n   \
+(g_(1,p)-g_(1,q)-mc*gi_(1))*g_(1,lor1)*(-g_(1,k2)-2*g_(1,p)+mc*gi_(1))*g_(1,\
+li3));\ntracen,1;\ncontract 0;\n.sort\n\>\"", ",", "\[IndentingNewLine]", 
+    RowBox[{"Form2M", " ", "\[Rule]", " ", 
+     RowBox[{"Function", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"Form2FC", "[", 
+        RowBox[{"x", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"li2", "->", " ", 
+            RowBox[{"LorentzIndex", "[", 
+             RowBox[{"li2", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"li3", "\[Rule]", 
+            RowBox[{"LorentzIndex", "[", 
+             RowBox[{"li3", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"lor1", "\[Rule]", 
+            RowBox[{"LorentzIndex", "[", 
+             RowBox[{"lor1", ",", "D"}], "]"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{"lor4", "\[Rule]", 
+            RowBox[{"LorentzIndex", "[", 
+             RowBox[{"lor4", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"k1", "\[Rule]", 
+            RowBox[{"Momentum", "[", 
+             RowBox[{"k1", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"k2", "\[Rule]", 
+            RowBox[{"Momentum", "[", 
+             RowBox[{"k2", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"p", "\[Rule]", 
+            RowBox[{"Momentum", "[", 
+             RowBox[{"p", ",", "D"}], "]"}]}], ",", 
+           RowBox[{"q", "\[Rule]", 
+            RowBox[{"Momentum", "[", 
+             RowBox[{"q", ",", "D"}], "]"}]}]}], "}"}]}], "]"}]}], " ", 
+      "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.564031284771456*^9, 3.5640313090674896`*^9}, {
+  3.5640506510326767`*^9, 3.564050656921185*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
+Mathematica: \"\>", "\[InvisibleSpace]", "0.156`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "FORM and FormRead finished, time needed before translating to \
+Mathematica: ", 0.156, " sec"],
+   Editable->False], TraditionalForm]], "Print"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
+    "\[InvisibleSpace]", "1.5288000000000002`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+   SequenceForm[
+   "Translation done. Total wall clock time needed: ", 1.5288000000000002`, 
+    " sec"],
+   Editable->False], TraditionalForm]], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   TagBox[
+    PanelBox[GridBox[{
+       {
+        StyleBox[
+         StyleBox[
+          DynamicBox[ToBoxes[
+            FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+            TraditionalForm],
+           ImageSizeCache->{453., {4., 14.}}],
+          StripOnInput->False,
+          DynamicUpdating->True], "Panel",
+         StripOnInput->False,
+         Background->None]},
+       {
+        ItemBox[
+         TagBox[
+          RowBox[{
+           RowBox[{"16", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["g", 
+             RowBox[{"lor1", "lor4"}]], " ", 
+            SuperscriptBox["mc", "8"]}], "-", 
+           RowBox[{"8", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["g", 
+             RowBox[{"lor1", "lor4"}]], " ", 
+            SuperscriptBox["mc", "8"]}], "+", 
+           RowBox[{"32", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["k1", "lor1"], " ", 
+            SuperscriptBox["k1", "lor4"], " ", 
+            SuperscriptBox["mc", "6"]}], "+", 
+           RowBox[{"\[LeftSkeleton]", "2882", "\[RightSkeleton]"}], "+", 
+           RowBox[{"512", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["k1", "lor4"], " ", 
+            SuperscriptBox["p", "lor1"], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k2",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["p",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             SuperscriptBox[
+              FormBox["q",
+               TraditionalForm], "2"],
+             TraditionalForm]}], "-", 
+           RowBox[{"128", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["k1", "lor4"], " ", 
+            SuperscriptBox["p", "lor1"], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k2",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["p",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             SuperscriptBox[
+              FormBox["q",
+               TraditionalForm], "2"],
+             TraditionalForm]}], "-", 
+           RowBox[{"128", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["g", 
+             RowBox[{"lor1", "lor4"}]], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k1",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["k2",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k2",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["p",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             SuperscriptBox[
+              FormBox["q",
+               TraditionalForm], "2"],
+             TraditionalForm]}], "+", 
+           RowBox[{"32", " ", 
+            SubscriptBox["C", "A"], " ", 
+            SubsuperscriptBox["C", "F", "2"], " ", "D", " ", 
+            SuperscriptBox["e", "2"], " ", 
+            SubsuperscriptBox["g", "s", "4"], " ", 
+            SuperscriptBox["r", "4"], " ", 
+            SuperscriptBox["g", 
+             RowBox[{"lor1", "lor4"}]], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k1",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["k2",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["k2",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             RowBox[{
+              FormBox["p",
+               TraditionalForm], "\[CenterDot]", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm], " ", 
+            FormBox[
+             SuperscriptBox[
+              FormBox["q",
+               TraditionalForm], "2"],
+             TraditionalForm]}]}],
+          Short[#, 5]& ],
+         Background->GrayLevel[1],
+         BaseStyle->{Deployed -> False},
+         Frame->True,
+         FrameStyle->GrayLevel[0, 0.2],
+         StripOnInput->False]},
+       {
+        RowBox[{
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+              TraditionalForm],
+             ImageSizeCache->{82., {1., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 68, 29669370532194178666, 5/2],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+              TraditionalForm],
+             ImageSizeCache->{91., {1., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 68, 29669370532194178666, 5 2],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+              TraditionalForm],
+             ImageSizeCache->{138., {4., 14.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          
+          ButtonFunction:>OutputSizeLimit`ButtonFunction[
+           Identity, 68, 29669370532194178666, Infinity],
+          Enabled->True,
+          Evaluator->Automatic,
+          Method->"Queued"], "\[ThinSpace]", 
+         ButtonBox[
+          StyleBox[
+           StyleBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+              TraditionalForm],
+             ImageSizeCache->{116., {1., 13.}}],
+            StripOnInput->False,
+            DynamicUpdating->True], "Panel",
+           StripOnInput->False,
+           Background->None],
+          Appearance->Automatic,
+          ButtonFunction:>FrontEndExecute[{
+             FrontEnd`SetOptions[
+             FrontEnd`$FrontEnd, 
+              FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+             FrontEnd`FrontEndToken["PreferencesDialog"]}],
+          Evaluator->None,
+          Method->"Preemptive"]}]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxDividers->{
+       "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[1.2]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     DefaultBaseStyle->{},
+     FrameMargins->5],
+    Deploy,
+    DefaultBaseStyle->"Deploy"],
+   Out[68]], TraditionalForm]], "Output",
+ LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ GraphicsColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+ FontFamily->"Courier",
+ FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"res", "//", "Variables"}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    SubscriptBox["C", "A"], ",", 
+    SubscriptBox["C", "F"], ",", "e", ",", 
+    SubscriptBox["g", "s"], ",", "mc", ",", "r", ",", 
+    SuperscriptBox["k1", "lor1"], ",", 
+    SuperscriptBox["k1", "lor4"], ",", 
+    SuperscriptBox["k2", "lor1"], ",", "D", ",", 
+    SuperscriptBox["k2", "lor4"], ",", 
+    SuperscriptBox["p", "lor1"], ",", 
+    SuperscriptBox["p", "lor4"], ",", 
+    SuperscriptBox["q", "lor1"], ",", 
+    SuperscriptBox["q", "lor4"], ",", 
+    SuperscriptBox["g", 
+     RowBox[{"lor1", "lor4"}]], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox["k1",
+       TraditionalForm], "2"],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["k1",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["k2",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["k1",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["p",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["k1",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["q",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox["k2",
+       TraditionalForm], "2"],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["k2",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["p",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["k2",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["q",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox["p",
+       TraditionalForm], "2"],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox["p",
+       TraditionalForm], "\[CenterDot]", 
+      FormBox["q",
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox["q",
+       TraditionalForm], "2"],
+     TraditionalForm]}], "}"}], TraditionalForm]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"res", "//", "Variables"}], "//", "InputForm"}]], "Input"],
+
+Cell["\<\
+{CA, CF, e, Gstrong, mc, r, FVD[k1, lor1], FVD[k1, lor4], FVD[k2, lor1], D, \
+FVD[k2, lor4], 
+ FVD[p, lor1], FVD[p, lor4], FVD[q, lor1], FVD[q, lor4], MTD[lor1, lor4], \
+SPD[k1, k1], 
+ SPD[k1, k2], SPD[k1, p], SPD[k1, q], SPD[k2, k2], SPD[k2, p], SPD[k2, q], \
+SPD[p, p], 
+ SPD[p, q], SPD[q, q]}\
+\>", "Output"]
+}, Open  ]]
+},
+WindowSize->{1753, 897},
+WindowMargins->{{21, Automatic}, {20, Automatic}},
+ShowSelection->True,
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.5, 1.5 Inherited],
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "Preprint.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3564523085-4378480"->{
+  Cell[10623, 288, 184, 3, 63, "Print",
+   CellTags->"Info3564523085-4378480"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3564523085-4378480", 27043, 769}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 92, 2, 43, "Input"],
+Cell[CellGroupData[{
+Cell[674, 26, 905, 15, 395, "Input"],
+Cell[CellGroupData[{
+Cell[1604, 45, 385, 9, 32, "Print"],
+Cell[1992, 56, 329, 7, 32, "Print"]
+}, Open  ]],
+Cell[2336, 66, 7723, 195, 227, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10096, 266, 90, 2, 43, "Input"],
+Cell[10189, 270, 238, 6, 104, "Output"]
+}, Open  ]],
+Cell[10442, 279, 103, 2, 43, "Input"],
+Cell[CellGroupData[{
+Cell[10570, 285, 50, 1, 43, "Input"],
+Cell[10623, 288, 184, 3, 63, "Print",
+ CellTags->"Info3564523085-4378480"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10844, 296, 2126, 47, 449, "Input"],
+Cell[CellGroupData[{
+Cell[12995, 347, 385, 9, 32, "Print"],
+Cell[13383, 358, 364, 9, 32, "Print"]
+}, Open  ]],
+Cell[13762, 370, 10167, 279, 199, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23966, 654, 60, 1, 43, "Input"],
+Cell[24029, 657, 2043, 78, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26109, 740, 92, 2, 43, "Input"],
+Cell[26204, 744, 321, 8, 126, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

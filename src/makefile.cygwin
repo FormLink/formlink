@@ -1,0 +1,45 @@
+# Makefile for gcc and  Mathematica 8 for Windows-x86-64 
+#
+# in a cygwin terminal cd to this directory, check that MLINKDIR points to the correct location, and then do:
+#
+# make -f makefile.cygwin clean; make -f makefile.cygwin; make -f makefile.cygwin install; make -f makefile.cygwin clean
+#
+#
+#
+###################################################################### 
+#
+#
+# gcc is the /usr/local/bin/gcc installed in Cygwin
+#
+CC=gcc
+
+MLINKDIR="/cygdrive/c/Program Files/Wolfram Research/Mathematica/8.0/SystemFiles/Links/MathLink/DeveloperKit"
+
+SYS=Windows
+CADDSDIR = ${MLINKDIR}/${SYS}/CompilerAdditions/cygwin
+INCDIR = ${CADDSDIR}/include
+LIBDIR = ${CADDSDIR}/lib
+#important:
+EXTRALIBS = -mwindows #  see also: http://cygwin.com/1.5/faq.html 
+MLLIB = ml32i3  
+MPREP=${CADDSDIR}/bin/mprep.exe
+
+BINARY = FormLink
+all : ${BINARY} 
+
+FormLink : FormLinktm.o FormLink.o
+	${CC} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} ${EXTRALIBS} -lstdc++ -lml32i3 -o $@
+
+.c.o :
+	${CC} -mwindows -c  -I${INCDIR} $<
+    
+FormLinktm.c : FormLink.tm
+	${MPREP} $? -o $@
+
+clean :
+	@rm -rf *o *tm.c *.exe
+
+install : FormLink
+	install -m 0755 FormLink.exe ../bin/windows
+
+.PHONY : install clean   
