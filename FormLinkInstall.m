@@ -276,7 +276,7 @@ trace4 0;
 
 	(* this is a function to switch on TraditionalForm Output, useful for FeynCalc typesetting *)
 	(*FeynCalcFormLink`SetTF;*)
-	ToExpression["SetTF"];
+	(*ToExpression["SetTF"];*)
 	If[ $FrontEnd =!= Null,
 		CellPrint[Cell[
 			"FeynCalcFormLink[ DiracTrace[GA[\[Mu], \[Nu], \[Rho], \[Sigma], \[Tau], \[Alpha]]] ]","Input"]];
