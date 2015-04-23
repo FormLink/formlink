@@ -405,7 +405,7 @@ ShowScript[script_List, OptionsPattern[]] :=
   ];
 
 (* via FeynCalc $FrontEnd should not be changed, but it might be. So, set it back to the default here *)
-   If[ !MemberQ[$Packages, "HighEnergyPhysics`FeynCalc`"],
+   If[ !MemberQ[$Packages, "FeynCalc`"],
        If[ $FrontEnd =!= Null,
            SetOptions[#, "CommonDefaultFormatTypes" -> 
            {"Input" -> StandardForm, "InputInline" -> StandardForm, "Output" -> StandardForm, "OutputInline" -> StandardForm, "Text" -> TextForm, "TextInline" -> TraditionalForm}

@@ -231,7 +231,7 @@ that you are bound to agree to the license terms as explained here http://www.ni
 Most prominently you should  refer to the FORM publication (J.A.M.Vermaseren \"New features of FORM\" math-ph/0010025) when you use (Par)(T)FORM in scientific publications."];
 
 (* check if FeynCalc is installed. If not, install it *)
-If[ (FindFile["HighEnergyPhysics`FeynCalc`"] === $Failed)  && 
+If[ (FindFile["FeynCalc`"] === $Failed)  && 
     (FindFile["FeynCalc`"] === $Failed), (* for FC 9 *)
 	
 	(* something in Phi,only M9, need to fix in a new version *)
