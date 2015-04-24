@@ -29,3 +29,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License
 along with FeynCalc.  If not, see <http://www.gnu.org/licenses/>.
+
+
+The conditions for the use of FORM are laid out here: http://www.nikhef.nl/~form/license/license.html 
+and should be followed of course also when using FormLink.
+
+The license for using Mathematica is given here:
+http://www.wolfram.com/legal/agreements/wolfram-mathematica.html
