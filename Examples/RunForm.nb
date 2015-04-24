@@ -1,25 +1,16 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
-
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
-
-(* CreatedBy='Mathematica 8.0' *)
-
-(*CacheID: 234*)
-(* Internal cache information:
-NotebookFileLineBreakTest
-NotebookFileLineBreakTest
-NotebookDataPosition[       157,          7]
-NotebookDataLength[     58572,       1773]
-NotebookOptionsPosition[     54135,       1622]
-NotebookOutlinePosition[     54674,       1645]
-CellTagsIndexPosition[     54588,       1640]
-WindowFrame->Normal*)
-
-(* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{
+   RowBox[{"InputNotebook", "[", "]"}], ",", 
+   RowBox[{"PrivateNotebookOptions", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<FileOutlineCache\>\"", "\[Rule]", "False"}], "}"}]}], ",", 
+   RowBox[{"TrackCellChangeTimes", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.638856223867817*^9, 3.638856223872698*^9}}],
 
 Cell[CellGroupData[{
+
 Cell["RunForm examples", "Section"],
 
 Cell[TextData[{
@@ -42,12 +33,13 @@ Cell[BoxData[
 Cell[BoxData[
  StyleBox["\<\"RunForm[script] runs script in FORM and writes the result to \
 \\\"runform.frm\\\" and the log file to \\\"form.log\\\" in the directory \
-Directory[].\\n RunForm[script, formfile] uses formfile instead of \
+Directory[].\\nRunForm[script, formfile] uses formfile instead of \
 runform.frm. The first argument script can be a string or a list of \
-strings.\\n An optional third argument can be give to use a specific FORM \
+strings.\\nAn optional third argument can be give to use a specific FORM \
 executable, otherwise a FORM executable from $FormLinkDir/bin is used.\"\>", 
   "MSG"]], "Print", "PrintUsage",
- CellTags->"Info3564525611-1960829"]
+ CellChangeTimes->{3.638856232074916*^9},
+ CellTags->"Info3638863431-3798399"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -62,13 +54,55 @@ Cell[BoxData[
     RowBox[{"Style", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-       RowBox[{"RGBColor", "[", 
-        RowBox[{
-        "0.44444444444444453`", ",", "0.22222222222222227`", ",", "0.`"}], 
-        "]"}], ",", 
+       InterpretationBox[
+        ButtonBox[
+         TooltipBox[
+          RowBox[{
+           GraphicsBox[{
+             {GrayLevel[0], RectangleBox[{0, 0}]}, 
+             {GrayLevel[0], RectangleBox[{1, -1}]}, 
+             {RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.], 
+              RectangleBox[{0, -1}, {2, 1}]}},
+            AspectRatio->1,
+            Frame->True,
+            FrameStyle->RGBColor[0.2962962962962964, 0.1481481481481482, 0.],
+            FrameTicks->None,
+            
+            ImageSize->
+             Dynamic[{
+              Automatic, 1.35 CurrentValue["FontCapHeight"]/
+               AbsoluteCurrentValue[Magnification]}],
+            PlotRangePadding->None], "\[InvisibleSpace]"}],
+          "RGBColor[0.44444444444444453, 0.22222222222222227, 0.]"],
+         Appearance->None,
+         BaseStyle->{},
+         BaselinePosition->Baseline,
+         ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+           If[
+            Not[
+             AbsoluteCurrentValue["Deployed"]], 
+            SelectionMove[Typeset`box$, All, Expression]; 
+            FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+            FrontEnd`Private`$ColorSelectorInitialColor = 
+             RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]; 
+            FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+            MathLink`CallFrontEnd[
+              FrontEnd`AttachCell[Typeset`box$, 
+               FrontEndResource["RGBColorValueSelector"], {
+               0, {Left, Bottom}}, {Left, Top}, 
+               "ClosingActions" -> {
+                "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+         DefaultBaseStyle->{},
+         Evaluator->Automatic,
+         Method->"Preemptive"],
+        RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
+        Editable->False,
+        Selectable->False], ",", 
        RowBox[{"FontFamily", "\[Rule]", "\<\"Courier\"\>"}]}], "}"}]}], ",", 
     RowBox[{"FormSetup", "\[RuleDelayed]", "$FormSetup"}], ",", 
-    RowBox[{"Print", "\[Rule]", "True"}]}], "}"}], TraditionalForm]], "Output"]
+    RowBox[{"Print", "\[Rule]", "True"}]}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.638817571691103*^9, 3.638817574607354*^9}, 
+   3.6388562321851377`*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -91,20 +125,21 @@ On ShortStats;\n                L res= (a+b+c)^5; \n                .sort\n   \
  CellChangeTimes->{{3.564303592816618*^9, 3.5643036020842605`*^9}}],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:11 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:23:52 2015
     symbol a,b,c;
     Format NoSpaces;
     On ShortStats;
     L res= (a+b+c)^5;
     .sort
-      0.00s        1>        21-->        21:       380 res 
+      0.00s        1>        21-->        21:       760 res 
                     #write <res.txt> \"(%E)\", res
                     .end
-      0.00s       21>        21-->        21:       380 res 
+      0.00s       21>        21-->        21:       760 res 
   0.00 sec out of 0.00 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.63885623235209*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -115,7 +150,7 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:11 2012
 Cell[BoxData[
  FormBox[
   RowBox[{"{", 
-   RowBox[{"0.14040030000000000565130164886795682833`5.167967949052081", ",", 
+   RowBox[{"0.16675200000000001132605120801599696279`5.242670964766291", ",", 
     RowBox[{
      SuperscriptBox["a", "5"], "+", 
      RowBox[{"5", " ", 
@@ -165,6 +200,7 @@ Cell[BoxData[
      RowBox[{"5", " ", "b", " ", 
       SuperscriptBox["c", "4"]}], "+", 
      SuperscriptBox["c", "5"]}]}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817574872015*^9, 3.638856232504265*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -181,7 +217,8 @@ Cell["\<\
 (c^5+5*b*c^4+10*b^2*c^3+10*b^3*c^2+5*b^4*c+b^5+5*a*c^4+20*a*b*c^3+30*a*
       b^2*c^2+20*a*b^3*c+5*a*b^4+10*a^2*c^3+30*a^2*b*c^2+30*a^2*b^2*c+
       10*a^2*b^3+10*a^3*c^2+20*a^3*b*c+10*a^3*b^2+5*a^4*c+5*a^4*b+a^5)\
-\>", "Print"]
+\>", "Print",
+ CellChangeTimes->{3.638817574932259*^9, 3.638856232714031*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -207,17 +244,18 @@ Cell[BoxData[
   3.5641713259410844`*^9}, {3.5641713750738945`*^9, 3.5641713756809297`*^9}}],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:11 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:23:52 2015
     symbol a,b,c;
     Off Statistics;
     L res= (a+b+c)^199;
     .sort;
     #write <res.txt> \"(%E)\", res
     .end
-  1.17 sec out of 1.17 sec\
+  1.07 sec out of 1.07 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.6388562339630737`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -229,8 +267,9 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "5.16360910000000039588030631421133875847`6.733553270782084", ",", 
+   "7.88677000000000028023805498378351330757`6.917499089063513", ",", 
     "20100"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817582473213*^9, 3.638856240675152*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -251,7 +290,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.5641713799951763`*^9, 3.564171380707217*^9}}],
 
 Cell[BoxData[
- FormBox["0", TraditionalForm]], "Output"]
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817582787593*^9, 3.6388562410894413`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -271,8 +311,8 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"result", " ", "=", " ", 
        RowBox[{"Form2M", "[", 
-        RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";"}], 
-     "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"FLReadString", "[", "\"\<res.txt\>\"", "]"}], "]"}]}], ";"}],
+      "*)"}], "\[IndentingNewLine]", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{
@@ -289,17 +329,18 @@ Cell[BoxData[
   3.5641713842414193`*^9, 3.5641713849864616`*^9}}],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:17 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:01 2015
     symbol a,b,c;
     Off Statistics;
     L res= (a+b+c)^199;
     .sort;
     #write <res.txt> \"(%E)\", res
     .end
-  1.16 sec out of 1.17 sec\
+  0.98 sec out of 0.99 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.638856242243676*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -311,8 +352,9 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "1.48200259999999994775521372503135353327`6.191448878842409", ",", 
+   "1.43192999999999992510879565088544040918`6.176521701253703", ",", 
     "20100"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388175842453947`*^9, 3.638856242646207*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -334,7 +376,8 @@ Cell[BoxData[
   3.564171390291765*^9, 3.5641713909548035`*^9}}],
 
 Cell[BoxData[
- FormBox["0", TraditionalForm]], "Output"]
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817584590026*^9, 3.638856243075317*^9}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -361,8 +404,9 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "0.06240010000000000001119104808822157793`4.815785198946237", ",", 
-    "Null"}], "}"}], TraditionalForm]], "Output"]
+   "0.0998409999999999991926458164925861638`5.019908835500854", ",", "Null"}],
+    "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817584778161*^9, 3.638856243287505*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -390,7 +434,7 @@ Statistics;\n      L res= (a+b+c+d+e+f+g)^21;\n     .sort\n      #write \
  CellChangeTimes->{{3.564171406214676*^9, 3.564171406670702*^9}}],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:18 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:03 2015
     symbol a,b,c,d,e,f,g;
     Format NoSpaces;
     Off Statistics;
@@ -398,10 +442,11 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:18 2012
     .sort
           #write <res.txt> \"(%E)\", res
     .end
-  1.32 sec out of 1.33 sec\
+  0.95 sec out of 0.96 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.638856244403417*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -413,8 +458,9 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "5.47560960000000029879174689995124936104`6.7590323895184525", ",", 
+   "7.11885600000000007270273272297345101833`6.873010121410066", ",", 
     "296010"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388175919511538`*^9, 3.638856250525858*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -440,11 +486,13 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "0.92040160000000004192344249531743116677`5.984577278242079", ",", 
-    "Null"}], "}"}], TraditionalForm]], "Output"],
+   "1.50485500000000005371703082346357405186`6.198094568868197", ",", 
+    "Null"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388175934153347`*^9, 3.638856252201351*^9}],
 
 Cell[BoxData[
- FormBox["0", TraditionalForm]], "Output"]
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388175934153347`*^9, 3.638856254290742*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -458,7 +506,7 @@ Cell[BoxData[
 Factorize F1,F2;\n            Print;\n            .end\n    \>\""}]], "Input"],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:26 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:14 2015
     Symbol x,y;
     Format NoSpaces;
     On ShortStats;
@@ -467,10 +515,10 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:26 2012
     Factorize F1,F2;
     Print;
     .end
-      0.01s        1>         2-->         2:        26 F1 
-      0.07s        1>        51-->        51:       762 F1 factorize
-      0.07s        1>         2-->         2:        32 F2 
-      0.28s        1>        39-->        39:       696 F2 factorize
+      0.00s        1>         2-->         2:        52 F1 
+      0.07s        1>        51-->        51:      1524 F1 factorize
+      0.07s        1>         2-->         2:        64 F2 
+      0.25s        1>        39-->        39:      1392 F2 factorize
 
    F1=
        (-1+x)
@@ -496,10 +544,11 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:26 2012
          y^2+x^9*y+x^10)
       *(y^20-x^2*y^18+x^4*y^16-x^6*y^14+x^8*y^12-x^10*y^10+x^12*y^8-
          x^14*y^6+x^16*y^4-x^18*y^2+x^20);
-  0.28 sec out of 0.28 sec\
+  0.25 sec out of 0.25 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.6388562547291193`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -508,13 +557,13 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:26 2012
  FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]],
 
 Cell[BoxData[
- FormBox["\<\"FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec \
-15 02:00:26 2012\\n    Symbol x,y;\\n    Format NoSpaces;\\n    On \
+ FormBox["\<\"FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr \
+24 11:24:14 2015\\n    Symbol x,y;\\n    Format NoSpaces;\\n    On \
 ShortStats;\\n    Local F1=x^60-1;\\n    Local F2=y^44-x^44;\\n    Factorize \
-F1,F2;\\n    Print;\\n    .end\\n      0.01s        1>         2-->         \
-2:        26 F1 \\n      0.07s        1>        51-->        51:       762 F1 \
-factorize\\n      0.07s        1>         2-->         2:        32 F2 \\n    \
-  0.28s        1>        39-->        39:       696 F2 factorize\\n\\n   \
+F1,F2;\\n    Print;\\n    .end\\n      0.00s        1>         2-->         \
+2:        52 F1 \\n      0.07s        1>        51-->        51:      1524 F1 \
+factorize\\n      0.07s        1>         2-->         2:        64 F2 \\n    \
+  0.25s        1>        39-->        39:      1392 F2 factorize\\n\\n   \
 F1=\\n       (-1+x)\\n      *(1-x+x^2)\\n      *(1-x+x^2-x^3+x^4)\\n      \
 *(1-x+x^3-x^4+x^5-x^7+x^8)\\n      *(1+x)\\n      *(1+x+x^2)\\n      \
 *(1+x+x^2+x^3+x^4)\\n      *(1+x-x^3-x^4-x^5+x^7+x^8)\\n      *(1-x^2+x^4)\\n \
@@ -526,8 +575,9 @@ y^2-x^9*y+x^10)\\n      \
 *(y^10+x*y^9+x^2*y^8+x^3*y^7+x^4*y^6+x^5*y^5+x^6*y^4+x^7*y^3+x^8*\\n         \
 y^2+x^9*y+x^10)\\n      \
 *(y^20-x^2*y^18+x^4*y^16-x^6*y^14+x^8*y^12-x^10*y^10+x^12*y^8-\\n         \
-x^14*y^6+x^16*y^4-x^18*y^2+x^20);\\n  0.28 sec out of 0.28 sec\"\>", 
+x^14*y^6+x^16*y^4-x^18*y^2+x^20);\\n  0.25 sec out of 0.25 sec\"\>", 
   TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817595848919*^9, 3.6388562548048964`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -555,31 +605,35 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.062400000000000004`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.06960000000000001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.062400000000000004`, " sec"],
-   Editable->False], TraditionalForm]], "Print"],
+Mathematica: ", 0.06960000000000001, " sec"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.638817596075383*^9, 3.6388562549888067`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1872`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.11720000000000001`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1872, " sec"],
-   Editable->False], TraditionalForm]], "Print"]
+   "Translation done. Total wall clock time needed: ", 0.11720000000000001`, 
+    " sec"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.638817596075383*^9, 3.638856255046693*^9}]
 }, Open  ]],
 
 Cell["\<\
-\"(+factor_*(-1+x)+factor_^2*(1-x+x^2)+factor_^3*(1-x+x^\\
-2-x^3+x^4)+factor_^4*(1-x+x^3-x^4+x^5-x^7+x^8)+factor_^\\
-5*(1+x)+factor_^6*(1+x+x^2)+factor_^7*(1+x+x^2+x^3+x^4)\\
-+factor_^8*(1+x-x^3-x^4-x^5+x^7+x^8)+factor_^9*(1-x^2+x\\
-^4)+factor_^10*(1-x^2+x^4-x^6+x^8)+factor_^11*(1+x^2)+f\\
-actor_^12*(1+x^2-x^6-x^8-x^10+x^14+x^16))\"\
+\"(+factor_*(-1+x)+factor_^2*(1-x+x^2)+factor_^3*(1-x+x^2-x^3+x^4)+factor_^4*(\
+1-x+x^3-x^4+x^5-x^7+x^8)+factor_^5*(1+x)+factor_^\\
+6*(1+x+x^2)+factor_^7*(1+x+x^2+x^3+x^4)+factor_^8*(1+x-x^3-x^4-x^5+x^7+x^8)+\
+factor_^9*(1-x^2+x^4)+factor_^10*(1-x^2+x^4-x^6+x^\\
+8)+factor_^11*(1+x^2)+factor_^12*(1+x^2-x^6-x^8-x^10+x^14+x^16))\"\
 \>", "Output",
+ CellChangeTimes->{3.6388175962043447`*^9, 3.63885625511158*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -659,7 +713,8 @@ Cell[BoxData[
      SuperscriptBox["x", "8"], "-", 
      SuperscriptBox["x", "6"], "+", 
      SuperscriptBox["x", "2"], "+", "1"}], ")"}]}], 
-  TraditionalForm]], "Output"]
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817596359703*^9, 3.6388562553199873`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -727,7 +782,8 @@ Cell[BoxData[
      SuperscriptBox["x", "8"], "-", 
      SuperscriptBox["x", "6"], "+", 
      SuperscriptBox["x", "2"], "+", "1"}], ")"}]}], 
-  TraditionalForm]], "Output"]
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817596641314*^9, 3.638856255644293*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -750,7 +806,7 @@ Local T = g_(0, p1,p2,p3,p4,p5,p6);\[IndentingNewLine]              trace4 0;\
       "      ", "]"}]}], "]"}]}]], "Input"],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:27 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:15 2015
     AutoDeclare vector p;
     Local T = g_(0, p1,p2,p3,p4,p5,p6);
     trace4 0;
@@ -760,7 +816,7 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:27 2012
 
 Time =       0.00 sec    Generated terms =         15
                T         Terms in output =         15
-                         Bytes used      =        336
+                         Bytes used      =        672
 
    T =
       4*p1.p2*p3.p4*p5.p6 - 4*p1.p2*p3.p5*p4.p6 + 4*p1.p2*p3.p6*p4.p5 - 4*
@@ -773,6 +829,7 @@ Time =       0.00 sec    Generated terms =         15
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.638856255855542*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -781,8 +838,9 @@ Time =       0.00 sec    Generated terms =         15
  FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]],
 
 Cell[BoxData[
- FormBox["0.0780002000000000056401106007797352504`4.912695629544271", 
+ FormBox["0.09942600000000000048938630925476900302`5.0180998809768464", 
   TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388175968514*^9, 3.638856255953801*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -802,7 +860,8 @@ trace4 0;
 Print;
 
 .end\
-\>", "Print"]
+\>", "Print",
+ CellChangeTimes->{3.638817596964952*^9, 3.638856256036631*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -811,7 +870,7 @@ Cell[BoxData[
  RowBox[{"FilePrint", "[", "\"\<form.log\>\"", "]"}]], "Input"],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:27 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:15 2015
     AutoDeclare vector p;
     Local T = g_(0, p1,p2,p3,p4,p5,p6);
     trace4 0;
@@ -821,7 +880,7 @@ FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:27 2012
 
 Time =       0.00 sec    Generated terms =         15
                T         Terms in output =         15
-                         Bytes used      =        336
+                         Bytes used      =        672
 
    T =
       4*p1.p2*p3.p4*p5.p6 - 4*p1.p2*p3.p5*p4.p6 + 4*p1.p2*p3.p6*p4.p5 - 4*
@@ -831,7 +890,8 @@ Time =       0.00 sec    Generated terms =         15
        - 4*p1.p6*p2.p4*p3.p5 + 4*p1.p6*p2.p5*p3.p4;
 
   0.00 sec out of 0.00 sec\
-\>", "Print"]
+\>", "Print",
+ CellChangeTimes->{3.6388175970807056`*^9, 3.6388562561667547`*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -980,28 +1040,49 @@ Cell[BoxData[
      SubscriptBox["C", "A"], " ", 
      SubsuperscriptBox["C", "F", "2"], " ", 
      SubsuperscriptBox["g", "s", "4"], " ", 
-     SuperscriptBox["g", 
-      RowBox[{"li2", "li3"}]], " ", 
-     SuperscriptBox["g", 
-      RowBox[{
-       FormBox[
-        RowBox[{"c", "(", "li2", ")"}],
-        TraditionalForm], 
-       FormBox[
-        RowBox[{"c", "(", "li3", ")"}],
-        TraditionalForm]}]], " ", 
+     FormBox[
+      SuperscriptBox["g", 
+       RowBox[{
+        FormBox[
+         FormBox[
+          FormBox["li2",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox["li3",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]}]],
+      TraditionalForm], " ", 
+     FormBox[
+      SuperscriptBox["g", 
+       RowBox[{
+        FormBox[
+         FormBox[
+          FormBox[
+           RowBox[{"c", "(", "li2", ")"}],
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox[
+           RowBox[{"c", "(", "li3", ")"}],
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]}]],
+      TraditionalForm], " ", 
      RowBox[{"tr", "(", 
       FormBox[
        RowBox[{
         RowBox[{"(", 
          RowBox[{
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
            FormBox[
-            InterpretationBox[
-             SubscriptBox["k", "1"],
-             $CellContext`k1],
+            FormBox["k1",
+             TraditionalForm],
             TraditionalForm]}], "+", "mc"}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1011,17 +1092,19 @@ Cell[BoxData[
           TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", "(", 
+          RowBox[{"\[Gamma]", "\[CenterDot]", "(", 
            FormBox[
-            RowBox[{
-             InterpretationBox[
-              SubscriptBox["k", "1"],
-              $CellContext`k1], "+", 
-             InterpretationBox[
-              SubscriptBox["k", "2"],
-              $CellContext`k2], "+", "p", "-", "q"}],
+            FormBox[
+             RowBox[{
+              FormBox["k1",
+               TraditionalForm], "+", 
+              FormBox["k2",
+               TraditionalForm], "+", 
+              FormBox["p",
+               TraditionalForm], "-", 
+              FormBox["q",
+               TraditionalForm]}],
+             TraditionalForm],
             TraditionalForm], ")"}], "+", "mc"}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1032,28 +1115,31 @@ Cell[BoxData[
         RowBox[{"(", 
          RowBox[{
           RowBox[{"-", "mc"}], "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["p",
+             TraditionalForm],
             TraditionalForm]}], "-", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["q",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
             TraditionalForm]}]}], ")"}], ".", 
-        SuperscriptBox["\[Gamma]", "5"], ".", 
+        SuperscriptBox[
+         OverscriptBox["\[Gamma]", "_"], 
+         FormBox["5",
+          TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{"mc", "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["p",
+             TraditionalForm],
             TraditionalForm]}], "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["q",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
             TraditionalForm]}]}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1063,13 +1149,10 @@ Cell[BoxData[
           TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
            FormBox[
-            InterpretationBox[
-             SubscriptBox["k", "2"],
-             $CellContext`k2],
+            FormBox["k2",
+             TraditionalForm],
             TraditionalForm]}], "-", "mc"}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1078,29 +1161,32 @@ Cell[BoxData[
           TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{"mc", "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["p",
+             TraditionalForm],
             TraditionalForm]}], "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["q",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
             TraditionalForm]}]}], ")"}], ".", 
-        SuperscriptBox["\[Gamma]", "5"], ".", 
+        SuperscriptBox[
+         OverscriptBox["\[Gamma]", "_"], 
+         FormBox["5",
+          TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{
           RowBox[{"-", "mc"}], "+", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["p",
+             TraditionalForm],
             TraditionalForm]}], "-", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["q",
+          RowBox[{"\[Gamma]", "\[CenterDot]", 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
             TraditionalForm]}]}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1109,15 +1195,16 @@ Cell[BoxData[
           TraditionalForm]], ".", 
         RowBox[{"(", 
          RowBox[{"mc", "-", 
-          RowBox[{
-           FormBox["\<\"\[Gamma]\"\>",
-            TraditionalForm], "\[CenterDot]", "(", 
+          RowBox[{"\[Gamma]", "\[CenterDot]", "(", 
            FormBox[
-            RowBox[{
-             InterpretationBox[
-              SubscriptBox["k", "2"],
-              $CellContext`k2], "+", 
-             RowBox[{"2", " ", "p"}]}],
+            FormBox[
+             RowBox[{
+              FormBox["k2",
+               TraditionalForm], "+", 
+              RowBox[{"2", " ", 
+               FormBox["p",
+                TraditionalForm]}]}],
+             TraditionalForm],
             TraditionalForm], ")"}]}], ")"}], ".", 
         SuperscriptBox["\[Gamma]", 
          FormBox[
@@ -1143,49 +1230,70 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"-", 
          RowBox[{"2", " ", "r", " ", 
-          RowBox[{
-           FormBox[
-            InterpretationBox[
-             SubscriptBox["k", "2"],
-             $CellContext`k2],
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["q",
-            TraditionalForm]}]}]}], "-", 
+          RowBox[{"(", 
+           RowBox[{
+            FormBox[
+             FormBox["k2",
+              TraditionalForm],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             FormBox["q",
+              TraditionalForm],
+             TraditionalForm]}], ")"}]}]}], "-", 
         RowBox[{"2", " ", 
          SuperscriptBox["m", "2"], " ", "x1"}], "+", 
         RowBox[{"2", " ", 
          SuperscriptBox["m", "2"]}], "-", 
         RowBox[{"2", " ", "r", " ", 
-         RowBox[{
-          FormBox["p",
-           TraditionalForm], "\[CenterDot]", 
-          FormBox["q",
-           TraditionalForm]}]}], "+", 
+         RowBox[{"(", 
+          RowBox[{
+           FormBox[
+            FormBox["p",
+             TraditionalForm],
+            TraditionalForm], 
+           FormBox["\<\"\[CenterDot]\"\>",
+            TraditionalForm], 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
+            TraditionalForm]}], ")"}]}], "+", 
         RowBox[{
          SuperscriptBox[
-          FormBox["q",
+          FormBox[
+           FormBox["q",
+            TraditionalForm],
            TraditionalForm], "2"], " ", "r"}]}], ")"}], "2"], " ", 
      RowBox[{"(", 
       RowBox[{
        RowBox[{"-", 
         RowBox[{"2", " ", "r", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           FormBox[
+            FormBox["k1",
+             TraditionalForm],
+            TraditionalForm], 
+           FormBox["\<\"\[CenterDot]\"\>",
+            TraditionalForm], 
+           FormBox[
+            FormBox["q",
+             TraditionalForm],
+            TraditionalForm]}], ")"}]}]}], "-", 
+       RowBox[{"2", " ", "r", " ", 
+        RowBox[{"(", 
          RowBox[{
           FormBox[
-           InterpretationBox[
-            SubscriptBox["k", "1"],
-            $CellContext`k1],
-           TraditionalForm], "\[CenterDot]", 
-          FormBox["q",
-           TraditionalForm]}]}]}], "-", 
-       RowBox[{"2", " ", "r", " ", 
-        RowBox[{
-         FormBox[
-          InterpretationBox[
-           SubscriptBox["k", "2"],
-           $CellContext`k2],
-          TraditionalForm], "\[CenterDot]", 
-         FormBox["q",
-          TraditionalForm]}]}], "+", 
+           FormBox["k2",
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox["\<\"\[CenterDot]\"\>",
+           TraditionalForm], 
+          FormBox[
+           FormBox["q",
+            TraditionalForm],
+           TraditionalForm]}], ")"}]}], "+", 
        RowBox[{
         SuperscriptBox["m", "2"], " ", "r"}], "-", 
        RowBox[{"2", " ", 
@@ -1195,16 +1303,26 @@ Cell[BoxData[
        RowBox[{
         SuperscriptBox["mc", "2"], " ", "r"}], "-", 
        RowBox[{"2", " ", "r", " ", 
-        RowBox[{
-         FormBox["p",
-          TraditionalForm], "\[CenterDot]", 
-         FormBox["q",
-          TraditionalForm]}]}], "+", 
+        RowBox[{"(", 
+         RowBox[{
+          FormBox[
+           FormBox["p",
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox["\<\"\[CenterDot]\"\>",
+           TraditionalForm], 
+          FormBox[
+           FormBox["q",
+            TraditionalForm],
+           TraditionalForm]}], ")"}]}], "+", 
        RowBox[{
         SuperscriptBox[
-         FormBox["q",
+         FormBox[
+          FormBox["q",
+           TraditionalForm],
           TraditionalForm], "2"], " ", "r"}]}], ")"}]}], ")"}]}], 
-  TraditionalForm]], "Output"]
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817604034484*^9, 3.638856264733253*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1216,8 +1334,9 @@ Cell[BoxData[
    "}"}], "]"}]], "Input"],
 
 Cell[BoxData[
- FormBox["\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\"\>", 
-  TraditionalForm]], "Output"]
+ FormBox["\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows\"\>", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817604203381*^9, 3.638856264896545*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1230,22 +1349,21 @@ Cell[BoxData[
 Cell[BoxData[
  FormBox[
   RowBox[{"{", 
-   RowBox[{"\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\\
+   RowBox[{"\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/\
 cygwin1.dll\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\\
-cygwin-src-20121016.tar.bz2\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\form.\
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/cygwin-\
+src-20121016.tar.bz2\"\>", 
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/form.\
 exe\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\\
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/\
 FormLink.exe\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\form.\
-set\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\init.\
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/init.\
 frm\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\\
-README.txt\"\>", 
-    ",", "\<\"G:\\\\unizh\\\\workunizh\\\\FormLink\\\\bin\\\\windows\\\\tform.\
-exe\"\>"}], "}"}], TraditionalForm]], "Output"]
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/README.\
+txt\"\>", 
+    ",", "\<\"/home/vs/.Mathematica/Applications/FormLink/bin/windows/tform.\
+exe\"\>"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817604372244*^9, 3.638856265067235*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1295,6 +1413,7 @@ contract 0;
 .sort;
 #write <o.txt> \"(%E)\", resFL\
 \>", "Output",
+ CellChangeTimes->{3.6388562652893867`*^9},
  LineColor->RGBColor[
    Rational[4, 9], 0.22222222222222227`, 0],
  FrontFaceColor->RGBColor[
@@ -1322,7 +1441,7 @@ Cell[BoxData[
    3.550656915275812*^9, {3.550657599766963*^9, 3.5506576061573286`*^9}}],
 
 Cell["\<\
-FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec 15 02:00:27 2012
+FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr 24 11:24:25 2015
     Symbols D,CA,CF,e,Gstrong,mc,r;
     Dimension D;
     Indices li2,li3;
@@ -1343,31 +1462,36 @@ lor1)*(mc
     contract 0;
     .sort;
 
-Time =       0.10 sec    Generated terms =     100000
-           resFL       1 Terms left      =       1171
-                         Bytes used      =      49562
+Time =       0.08 sec    Generated terms =      78498
+           resFL       1 Terms left      =       1062
+                         Bytes used      =      88304
 
-Time =       0.20 sec    Generated terms =     200000
-           resFL       1 Terms left      =       3590
-                         Bytes used      =     147346
+Time =       0.15 sec    Generated terms =     154929
+           resFL       1 Terms left      =       3286
+                         Bytes used      =     270116
 
-Time =       0.23 sec    Generated terms =     231629
-           resFL       1 Terms left      =       4940
-                         Bytes used      =     201112
+Time =       0.22 sec    Generated terms =     230563
+           resFL       1 Terms left      =       5428
+                         Bytes used      =     440256
 
-Time =       0.23 sec    Generated terms =     231629
+Time =       0.22 sec    Generated terms =     231629
+           resFL       1 Terms left      =       5689
+                         Bytes used      =     461480
+
+Time =       0.22 sec    Generated terms =     231629
            resFL         Terms in output =       3693
-                         Bytes used      =     148600
+                         Bytes used      =     297200
     #write <o.txt> \"(%E)\", resFL
     .end
 
-Time =       0.24 sec    Generated terms =       3693
+Time =       0.23 sec    Generated terms =       3693
            resFL         Terms in output =       3693
-                         Bytes used      =     148600
-  0.24 sec out of 0.25 sec\
+                         Bytes used      =     297200
+  0.23 sec out of 0.23 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
+ CellChangeTimes->{3.638856265851358*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1376,8 +1500,8 @@ Time =       0.24 sec    Generated terms =       3693
  FontColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.]],
 
 Cell[BoxData[
- FormBox["\<\"FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec \
-15 02:00:27 2012\\n    Symbols D,CA,CF,e,Gstrong,mc,r;\\n    Dimension D;\\n  \
+ FormBox["\<\"FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr \
+24 11:24:25 2015\\n    Symbols D,CA,CF,e,Gstrong,mc,r;\\n    Dimension D;\\n  \
   Indices li2,li3;\\n    Vectors k1,k2,p,q;\\n    AutoDeclare Index lor;\\n   \
  CFunctions c;\\n    Format Mathematica;\\n    L resFL = \
 (CA*CF^2*e^2*Gstrong^4*r^4*d_(li2,li3)*d_(lor2,lor3)*(mc*gi_(1)+g_(1,k\\n    \
@@ -1386,19 +1510,23 @@ g_(1,lor4)*(-(mc*gi_(1))+g_(1,p)-g_(1,q))*g5_(1)*(mc*gi_(1)+g_(1,p)+g_(1,q))*\
 g_(\\n    1,lor2)*(-(mc*gi_(1))+g_(1,k2))*g_(1,li2)*\\n    \
 (mc*gi_(1)+g_(1,p)+g_(1,q))*g5_(1)*(-(mc*gi_(1))+g_(1,p)-g_(1,q))*g_(1,lor1)*(\
 mc\\n    *gi_(1)-g_(1,k2)-2*g_(1,p))*g_(1,li3));\\n    tracen,1;\\n    \
-contract 0;\\n    .sort;\\n\\nTime =       0.10 sec    Generated terms =     \
-100000\\n           resFL       1 Terms left      =       1171\\n             \
-            Bytes used      =      49562\\n\\nTime =       0.20 sec    \
-Generated terms =     200000\\n           resFL       1 Terms left      =     \
-  3590\\n                         Bytes used      =     147346\\n\\nTime =    \
-   0.23 sec    Generated terms =     231629\\n           resFL       1 Terms \
-left      =       4940\\n                         Bytes used      =     \
-201112\\n\\nTime =       0.23 sec    Generated terms =     231629\\n          \
- resFL         Terms in output =       3693\\n                         Bytes \
-used      =     148600\\n    #write <o.txt> \\\"(%E)\\\", resFL\\n    .end\\n\
-\\nTime =       0.24 sec    Generated terms =       3693\\n           resFL   \
-      Terms in output =       3693\\n                         Bytes used      \
-=     148600\\n  0.24 sec out of 0.25 sec\"\>", TraditionalForm]], "Output",
+contract 0;\\n    .sort;\\n\\nTime =       0.08 sec    Generated terms =      \
+78498\\n           resFL       1 Terms left      =       1062\\n              \
+           Bytes used      =      88304\\n\\nTime =       0.15 sec    \
+Generated terms =     154929\\n           resFL       1 Terms left      =     \
+  3286\\n                         Bytes used      =     270116\\n\\nTime =    \
+   0.22 sec    Generated terms =     230563\\n           resFL       1 Terms \
+left      =       5428\\n                         Bytes used      =     \
+440256\\n\\nTime =       0.22 sec    Generated terms =     231629\\n          \
+ resFL       1 Terms left      =       5689\\n                         Bytes \
+used      =     461480\\n\\nTime =       0.22 sec    Generated terms =     \
+231629\\n           resFL         Terms in output =       3693\\n             \
+            Bytes used      =     297200\\n    #write <o.txt> \\\"(%E)\\\", \
+resFL\\n    .end\\n\\nTime =       0.23 sec    Generated terms =       \
+3693\\n           resFL         Terms in output =       3693\\n               \
+          Bytes used      =     297200\\n  0.23 sec out of 0.23 sec\"\>", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817605171171*^9, 3.6388562659152308`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1426,11 +1554,13 @@ Cell[BoxData[{
  RowBox[{"res", "//", "Length"}]}], "Input"],
 
 Cell[BoxData[
- FormBox["1.80960319999999996731787632597843185067`6.2781832688434935", 
-  TraditionalForm]], "Output"],
+ FormBox["3.55396299999999998320276972663123160601`6.571312815370327", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817608915433*^9, 3.638856269714909*^9}],
 
 Cell[BoxData[
- FormBox["2789", TraditionalForm]], "Output"]
+ FormBox["3693", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817608915433*^9, 3.63885626971698*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1439,7 +1569,8 @@ Cell[BoxData[
  RowBox[{"res", "//", "Head"}]], "Input"],
 
 Cell[BoxData[
- FormBox["Plus", TraditionalForm]], "Output"]
+ FormBox["Plus", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817609020187*^9, 3.638856269811832*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1458,21 +1589,38 @@ Cell[BoxData[
    SubscriptBox["C", "A"], " ", 
    SubsuperscriptBox["C", "F", "2"], " ", 
    SubsuperscriptBox["g", "s", "4"], " ", 
-   SuperscriptBox[
+   FormBox[
     FormBox[
-     InterpretationBox[
-      SubscriptBox["k", "1"],
-      $CellContext`k1],
-     TraditionalForm], "\[Gamma]"], " ", 
-   SuperscriptBox[
+     SuperscriptBox[
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox[
+       FormBox[
+        FormBox["\[Gamma]",
+         TraditionalForm],
+        TraditionalForm],
+       TraditionalForm]],
+     TraditionalForm],
+    TraditionalForm], " ", 
+   FormBox[
     FormBox[
-     InterpretationBox[
-      SubscriptBox["k", "1"],
-      $CellContext`k1],
-     TraditionalForm], 
-    FormBox[
-     RowBox[{"c", "(", "\[Gamma]", ")"}],
-     TraditionalForm]]}], TraditionalForm]], "Output"]
+     SuperscriptBox[
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox[
+       FormBox[
+        FormBox[
+         RowBox[{"c", "(", "\[Gamma]", ")"}],
+         TraditionalForm],
+        TraditionalForm],
+       TraditionalForm]],
+     TraditionalForm],
+    TraditionalForm]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.638817609085451*^9, 3.6388562699223824`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1487,121 +1635,256 @@ Cell[BoxData[
     SubscriptBox["C", "A"], ",", 
     SubscriptBox["C", "F"], ",", "e", ",", 
     SubscriptBox["g", "s"], ",", "mc", ",", "r", ",", 
-    SuperscriptBox[
-     FormBox[
-      InterpretationBox[
-       SubscriptBox["k", "1"],
-       $CellContext`k1],
-      TraditionalForm], "\[Gamma]"], ",", 
-    SuperscriptBox[
-     FormBox[
-      InterpretationBox[
-       SubscriptBox["k", "1"],
-       $CellContext`k1],
-      TraditionalForm], 
-     FormBox[
-      RowBox[{"c", "(", "\[Gamma]", ")"}],
-      TraditionalForm]], ",", "D", ",", 
-    SuperscriptBox[
-     FormBox[
-      InterpretationBox[
-       SubscriptBox["k", "2"],
-       $CellContext`k2],
-      TraditionalForm], "\[Gamma]"], ",", 
-    SuperscriptBox[
-     FormBox[
-      InterpretationBox[
-       SubscriptBox["k", "2"],
-       $CellContext`k2],
-      TraditionalForm], 
-     FormBox[
-      RowBox[{"c", "(", "\[Gamma]", ")"}],
-      TraditionalForm]], ",", 
-    SuperscriptBox["p", "\[Gamma]"], ",", 
-    SuperscriptBox["p", 
-     FormBox[
-      RowBox[{"c", "(", "\[Gamma]", ")"}],
-      TraditionalForm]], ",", 
-    SuperscriptBox["q", "\[Gamma]"], ",", 
-    SuperscriptBox["q", 
-     FormBox[
-      RowBox[{"c", "(", "\[Gamma]", ")"}],
-      TraditionalForm]], ",", 
-    SuperscriptBox["g", 
-     RowBox[{"\[Gamma]", 
-      FormBox[
-       RowBox[{"c", "(", "\[Gamma]", ")"}],
-       TraditionalForm]}]], ",", 
     FormBox[
-     RowBox[{
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "1"],
-        $CellContext`k1],
-       TraditionalForm], "\[CenterDot]", 
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "2"],
-        $CellContext`k2],
-       TraditionalForm]}],
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["k1",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox["\[Gamma]",
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
      TraditionalForm], ",", 
     FormBox[
-     RowBox[{
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "1"],
-        $CellContext`k1],
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["p",
-       TraditionalForm]}],
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["k1",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox[
+          RowBox[{"c", "(", "\[Gamma]", ")"}],
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
+     TraditionalForm], ",", "D", ",", 
+    FormBox[
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["k2",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox["\[Gamma]",
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
      TraditionalForm], ",", 
     FormBox[
-     RowBox[{
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "1"],
-        $CellContext`k1],
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["q",
-       TraditionalForm]}],
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["k2",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox[
+          RowBox[{"c", "(", "\[Gamma]", ")"}],
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
      TraditionalForm], ",", 
     FormBox[
-     RowBox[{
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "2"],
-        $CellContext`k2],
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["p",
-       TraditionalForm]}],
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["p",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox["\[Gamma]",
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
      TraditionalForm], ",", 
     FormBox[
-     RowBox[{
-      FormBox[
-       InterpretationBox[
-        SubscriptBox["k", "2"],
-        $CellContext`k2],
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["q",
-       TraditionalForm]}],
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["p",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox[
+          RowBox[{"c", "(", "\[Gamma]", ")"}],
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
+     TraditionalForm], ",", 
+    FormBox[
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["q",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox["\[Gamma]",
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
+     TraditionalForm], ",", 
+    FormBox[
+     FormBox[
+      SuperscriptBox[
+       FormBox[
+        FormBox["q",
+         TraditionalForm],
+        TraditionalForm], 
+       FormBox[
+        FormBox[
+         FormBox[
+          RowBox[{"c", "(", "\[Gamma]", ")"}],
+          TraditionalForm],
+         TraditionalForm],
+        TraditionalForm]],
+      TraditionalForm],
+     TraditionalForm], ",", 
+    FormBox[
+     FormBox[
+      SuperscriptBox["g", 
+       RowBox[{
+        FormBox[
+         FormBox[
+          FormBox["\[Gamma]",
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm], 
+        FormBox[
+         FormBox[
+          FormBox[
+           RowBox[{"c", "(", "\[Gamma]", ")"}],
+           TraditionalForm],
+          TraditionalForm],
+         TraditionalForm]}]],
+      TraditionalForm],
      TraditionalForm], ",", 
     FormBox[
      SuperscriptBox[
-      FormBox["p",
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
        TraditionalForm], "2"],
      TraditionalForm], ",", 
     FormBox[
      RowBox[{
-      FormBox["p",
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["q",
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p",
+        TraditionalForm],
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox[
+       FormBox["k1",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["q",
+        TraditionalForm],
        TraditionalForm]}],
      TraditionalForm], ",", 
     FormBox[
      SuperscriptBox[
-      FormBox["q",
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
        TraditionalForm], "2"],
-     TraditionalForm]}], "}"}], TraditionalForm]], "Output"]
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["p",
+        TraditionalForm],
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox[
+       FormBox["k2",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["q",
+        TraditionalForm],
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox[
+       FormBox["p",
+        TraditionalForm],
+       TraditionalForm], "2"],
+     TraditionalForm], ",", 
+    FormBox[
+     RowBox[{
+      FormBox[
+       FormBox["p",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox["\<\"\[CenterDot]\"\>",
+       TraditionalForm], 
+      FormBox[
+       FormBox["q",
+        TraditionalForm],
+       TraditionalForm]}],
+     TraditionalForm], ",", 
+    FormBox[
+     SuperscriptBox[
+      FormBox[
+       FormBox["q",
+        TraditionalForm],
+       TraditionalForm], "2"],
+     TraditionalForm]}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388176091364527`*^9, 3.6388562700448227`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1610,173 +1893,22 @@ Cell[BoxData[
  RowBox[{"%", "//", "InputForm"}]], "Input"],
 
 Cell["\<\
-{CA, CF, e, Gstrong, mc, r, FVD[k1, \[Gamma]], 
- FVD[k1, c[\[Gamma]]], D, FVD[k2, \[Gamma]], FVD[k2, c[\[Gamma]]], 
- FVD[p, \[Gamma]], FVD[p, c[\[Gamma]]], FVD[q, \[Gamma]], FVD[q, c[\[Gamma]]], 
- MTD[\[Gamma], c[\[Gamma]]], SPD[k1, k2], SPD[k1, p], SPD[k1, q], 
- SPD[k2, p], SPD[k2, q], SPD[p, p], SPD[p, q], 
- SPD[q, q]}\
-\>", "Output"]
+{CA, CF, e, Gstrong, mc, r, FVD[k1, \[Gamma]], FVD[k1, c[\[Gamma]]], D, \
+FVD[k2, \[Gamma]], FVD[k2, c[\[Gamma]]], FVD[p, \[Gamma]], FVD[p, \
+c[\[Gamma]]], 
+ FVD[q, \[Gamma]], FVD[q, c[\[Gamma]]], MTD[\[Gamma], c[\[Gamma]]], SPD[k1, \
+k1], SPD[k1, k2], SPD[k1, p], SPD[k1, q], SPD[k2, k2], SPD[k2, p], 
+ SPD[k2, q], SPD[p, p], SPD[p, q], SPD[q, q]}\
+\>", "Output",
+ CellChangeTimes->{3.6388176091446037`*^9, 3.6388562701204147`*^9}]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1187, 883},
-WindowMargins->{{12, Automatic}, {Automatic, 27}},
+WindowSize->{1280, 714},
+WindowMargins->{{-9, Automatic}, {Automatic, -8}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
 ShowSelection->True,
-Magnification->1.5,
-FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
-StyleDefinitions->"Default.nb"
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb",
+$CellContext`TrackCellChangeTimes -> False
 ]
-(* End of Notebook Content *)
-
-(* Internal cache information *)
-(*CellTagsOutline
-CellTagsIndex->{
- "Info3564525611-1960829"->{
-  Cell[910, 41, 531, 8, 151, "Print",
-   CellTags->"Info3564525611-1960829"]}
- }
-*)
-(*CellTagsIndex
-CellTagsIndex->{
- {"Info3564525611-1960829", 54486, 1634}
- }
-*)
-(*NotebookFileOutline
-Notebook[{
-Cell[CellGroupData[{
-Cell[579, 22, 35, 0, 117, "Section"],
-Cell[617, 24, 159, 7, 45, "Text"],
-Cell[779, 33, 53, 1, 45, "Input"],
-Cell[CellGroupData[{
-Cell[857, 38, 50, 1, 45, "Input"],
-Cell[910, 41, 531, 8, 151, "Print",
- CellTags->"Info3564525611-1960829"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1478, 54, 61, 1, 45, "Input"],
-Cell[1542, 57, 488, 13, 44, "Output"]
-}, Open  ]],
-Cell[2045, 73, 850, 17, 423, "Input"],
-Cell[2898, 92, 855, 20, 284, "Program"],
-Cell[3756, 114, 2319, 58, 83, "Output"],
-Cell[CellGroupData[{
-Cell[6100, 176, 76, 1, 45, "Input"],
-Cell[6179, 179, 238, 4, 75, "Print"]
-}, Open  ]],
-Cell[6432, 186, 972, 20, 365, "Input"],
-Cell[7407, 208, 684, 17, 220, "Program"],
-Cell[8094, 227, 560, 11, 44, "Output"],
-Cell[CellGroupData[{
-Cell[8679, 242, 283, 8, 45, "Input"],
-Cell[8965, 252, 56, 1, 44, "Output"]
-}, Open  ]],
-Cell[9036, 256, 1370, 32, 394, "Input"],
-Cell[10409, 290, 684, 17, 220, "Program"],
-Cell[11096, 309, 560, 11, 44, "Output"],
-Cell[CellGroupData[{
-Cell[11681, 324, 334, 9, 45, "Input"],
-Cell[12018, 335, 56, 1, 44, "Output"]
-}, Open  ]],
-Cell[12089, 339, 147, 5, 45, "Text"],
-Cell[CellGroupData[{
-Cell[12261, 348, 331, 9, 45, "Input"],
-Cell[12595, 359, 172, 5, 44, "Output"]
-}, Open  ]],
-Cell[12782, 367, 929, 22, 365, "Input"],
-Cell[13714, 391, 725, 18, 241, "Program"],
-Cell[14442, 411, 562, 11, 44, "Output"],
-Cell[CellGroupData[{
-Cell[15029, 426, 381, 10, 75, "Input"],
-Cell[15413, 438, 172, 5, 44, "Output"],
-Cell[15588, 445, 56, 1, 44, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[15681, 451, 43, 0, 65, "Subsection"],
-Cell[15727, 453, 275, 4, 278, "Input"],
-Cell[16005, 459, 1609, 48, 886, "Program"],
-Cell[17617, 509, 1712, 26, 1109, "Output"],
-Cell[CellGroupData[{
-Cell[19354, 539, 421, 10, 249, "Input"],
-Cell[CellGroupData[{
-Cell[19800, 553, 416, 9, 32, "Print"],
-Cell[20219, 564, 329, 7, 32, "Print"]
-}, Open  ]],
-Cell[20563, 574, 747, 13, 181, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[21347, 592, 315, 9, 45, "Input"],
-Cell[21665, 603, 1880, 58, 83, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23582, 666, 107, 3, 45, "Input"],
-Cell[23692, 671, 1880, 58, 83, "Output"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[25621, 735, 36, 0, 65, "Subsection"],
-Cell[25660, 737, 539, 12, 249, "Input"],
-Cell[26202, 751, 1207, 29, 478, "Program"],
-Cell[27412, 782, 502, 8, 44, "Output"],
-Cell[CellGroupData[{
-Cell[27939, 794, 80, 1, 45, "Input"],
-Cell[28022, 797, 105, 7, 140, "Print"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[28164, 809, 77, 1, 45, "Input"],
-Cell[28244, 812, 770, 21, 441, "Print"]
-}, Open  ]],
-Cell[29029, 836, 220, 6, 75, "Input"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[29298, 848, 110, 1, 117, "Section"],
-Cell[29411, 851, 61, 1, 45, "Input"],
-Cell[CellGroupData[{
-Cell[29497, 856, 4129, 114, 332, "Input"],
-Cell[33629, 972, 7344, 234, 150, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[41010, 1211, 161, 4, 45, "Input"],
-Cell[41174, 1217, 120, 2, 44, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[41331, 1224, 117, 3, 45, "Input"],
-Cell[41451, 1229, 827, 18, 157, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[42315, 1252, 735, 23, 133, "Input"],
-Cell[43053, 1277, 988, 30, 350, "Output"]
-}, Open  ]],
-Cell[44056, 1310, 269, 5, 45, "Input"],
-Cell[44328, 1317, 249, 4, 45, "Input"],
-Cell[44580, 1323, 2051, 52, 908, "Program"],
-Cell[46634, 1377, 2159, 29, 1221, "Output"],
-Cell[48796, 1408, 119, 3, 45, "Input"],
-Cell[CellGroupData[{
-Cell[48940, 1415, 343, 10, 75, "Input"],
-Cell[49286, 1427, 117, 2, 44, "Output"],
-Cell[49406, 1431, 59, 1, 44, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[49502, 1437, 55, 1, 45, "Input"],
-Cell[49560, 1440, 59, 1, 44, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[49656, 1446, 79, 2, 45, "Input"],
-Cell[49738, 1450, 685, 24, 49, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[50460, 1479, 60, 1, 45, "Input"],
-Cell[50523, 1482, 3138, 121, 50, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[53698, 1608, 58, 1, 45, "Input"],
-Cell[53759, 1611, 348, 7, 181, "Output"]
-}, Open  ]]
-}, Open  ]]
-}
-]
-*)
-
-(* End of internal cache information *)

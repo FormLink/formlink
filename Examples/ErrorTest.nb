@@ -1,23 +1,14 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
-
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
-
-(* CreatedBy='Mathematica 8.0' *)
-
-(*CacheID: 234*)
-(* Internal cache information:
-NotebookFileLineBreakTest
-NotebookFileLineBreakTest
-NotebookDataPosition[       157,          7]
-NotebookDataLength[      6455,        193]
-NotebookOptionsPosition[      5468,        153]
-NotebookOutlinePosition[      5870,        170]
-CellTagsIndexPosition[      5827,        167]
-WindowFrame->Normal*)
-
-(* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{
+   RowBox[{"InputNotebook", "[", "]"}], ",", 
+   RowBox[{"PrivateNotebookOptions", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<FileOutlineCache\>\"", "\[Rule]", "False"}], "}"}]}], ",", 
+   RowBox[{"TrackCellChangeTimes", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6388552584724493`*^9, 3.63885525847705*^9}}],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"<<", "FormLink`"}], ";"}]], "Input",
@@ -32,7 +23,8 @@ Cell[BoxData[
   3.5553803202910333`*^9, 3.5553803281464825`*^9}}],
 
 Cell[BoxData[
- FormBox["0", TraditionalForm]], "Output"]
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638855261782425*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -60,7 +52,8 @@ Cell[BoxData[
   3.5553774134417706`*^9, {3.5553803393001204`*^9, 3.555380339487131*^9}}],
 
 Cell[BoxData[
- FormBox["0", TraditionalForm]], "Output"]
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388552636472282`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -84,12 +77,13 @@ Cell[BoxData[
    FrontFaceColor->RGBColor[1, 0, 0],
    BackFaceColor->RGBColor[1, 0, 0],
    GraphicsColor->RGBColor[1, 0, 0],
-   FontColor->RGBColor[1, 0, 0]], TraditionalForm]], "Print"],
+   FontColor->RGBColor[1, 0, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.638855264480672*^9}],
 
 Cell[BoxData[
  FormBox[
-  StyleBox["\<\"FORM 4.0 (Aug 31 2012) 32-bits                   Run: Sat Dec \
-15 01:18:53 2012\\n    Off Statistics;\\n    \\n    #ifndef `PIPES_'\\n    \
+  StyleBox["\<\"FORM 4.0 (Apr 10 2012) 64-bits                   Run: Fri Apr \
+24 11:07:41 2015\\n    Off Statistics;\\n    \\n    #ifndef `PIPES_'\\n    \
 \\t#message \\\"No pipes found\\\";\\n    \\t.end;\\n    #endif\\n    \\n    \
 #if (`PIPES_' <= 0)\\n    \\t#message \\\"No pipes found\\\";\\n    \
 \\t.end;\\n    #endif\\n    \\n    #procedure put(fmt, mexp)\\n    \
@@ -109,14 +103,15 @@ gi_\\n    (1))*g5_(1)*\\n    \
 li3)\\n    );\\nexternalchannel Line 6 --> Unrecognized statement\\n    \
 tracen,1;\\n    contract 0;\\n    .sort\\n    #call put(\\\"%E\\\", \
 ResultFormLink)\\nput Line 3 ==> ResultFormLink is not an expression\\n    \
-.sort\\n    .end\\nProgram terminating at  --> \\n  0.00 sec out of 0.03 \
+.sort\\n    .end\\nProgram terminating at  --> \\n  0.00 sec out of 1.86 \
 sec\\n\"\>",
    StripOnInput->False,
    LineColor->RGBColor[1, 0.5, 0],
    FrontFaceColor->RGBColor[1, 0.5, 0],
    BackFaceColor->RGBColor[1, 0.5, 0],
    GraphicsColor->RGBColor[1, 0.5, 0],
-   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print"]
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.638855264541608*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -126,12 +121,13 @@ Cell[BoxData[
     RowBox[{"LinkObject", "::", "linkd"}], "MessageName"], 
    RowBox[{
    ":", " "}], "\<\"Unable to communicate with closed link \
-\[NoBreak]\\!\\(TraditionalForm\\`\\(LinkObject[\\(\\(\\\"\\\\\\\"G:\\\\\\\\\
-unizh\\\\\\\\workunizh\\\\\\\\FormLink\\\\\\\\bin\\\\\\\\windows\\\\\\\\\
-FormLink.exe\\\\\\\"\\\", 4218, 7\\)\\)]\\)\\)\[NoBreak]. \\!\\(\\*ButtonBox[\
-\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+\[NoBreak]\\!\\(TraditionalForm\\`\\(LinkObject[\\(\\(\\\"'/home/vs/.\
+Mathematica/Applications/FormLink/bin/linux64/FormLink'\\\", 108, 4\\)\\)]\\)\
+\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/LinkObject/linkd\\\", ButtonNote -> \
-\\\"LinkObject::linkd\\\"]\\)\"\>"}], TraditionalForm]], "Message", "MSG"]
+\\\"LinkObject::linkd\\\"]\\)\"\>"}], TraditionalForm]], "Message", "MSG",
+ CellChangeTimes->{3.638855264702042*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -139,7 +135,8 @@ Cell[CellGroupData[{
 Cell[BoxData["out"], "Input"],
 
 Cell[BoxData[
- FormBox["$Failed", TraditionalForm]], "Output"]
+ FormBox["$Failed", TraditionalForm]], "Output",
+ CellChangeTimes->{3.6388552669040613`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -148,55 +145,15 @@ Cell[BoxData[
  RowBox[{"FormStop", "[", "All", "]"}]], "Input"],
 
 Cell[BoxData[
- FormBox["128", TraditionalForm]], "Output"]
+ FormBox["256", TraditionalForm]], "Output",
+ CellChangeTimes->{3.638855267616558*^9}]
 }, Open  ]]
 },
 WindowSize->{707, 834},
-WindowMargins->{{96, Automatic}, {-9, Automatic}},
+WindowMargins->{{465, Automatic}, {Automatic, 19}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
 ShowSelection->True,
-Magnification->1.4000002145767212`,
-FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
-StyleDefinitions->"Default.nb"
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb",
+$CellContext`TrackCellChangeTimes -> False
 ]
-(* End of Notebook Content *)
-
-(* Internal cache information *)
-(*CellTagsOutline
-CellTagsIndex->{}
-*)
-(*CellTagsIndex
-CellTagsIndex->{}
-*)
-(*NotebookFileOutline
-Notebook[{
-Cell[557, 20, 192, 4, 42, "Input"],
-Cell[CellGroupData[{
-Cell[774, 28, 178, 3, 42, "Input"],
-Cell[955, 33, 56, 1, 41, "Output"]
-}, Open  ]],
-Cell[1026, 37, 727, 15, 583, "Input"],
-Cell[CellGroupData[{
-Cell[1778, 56, 153, 3, 42, "Input"],
-Cell[1934, 61, 56, 1, 41, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[2027, 67, 348, 7, 42, "Input"],
-Cell[CellGroupData[{
-Cell[2400, 78, 325, 8, 30, "Print"],
-Cell[2728, 88, 1784, 30, 1279, "Print"]
-}, Open  ]],
-Cell[4527, 121, 633, 12, 57, "Message"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[5197, 138, 29, 0, 42, "Input"],
-Cell[5229, 140, 62, 1, 41, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[5328, 146, 63, 1, 42, "Input"],
-Cell[5394, 149, 58, 1, 41, "Output"]
-}, Open  ]]
-}
-]
-*)
-
-(* End of internal cache information *)

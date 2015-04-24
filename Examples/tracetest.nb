@@ -1,23 +1,14 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
-
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
-
-(* CreatedBy='Mathematica 8.0' *)
-
-(*CacheID: 234*)
-(* Internal cache information:
-NotebookFileLineBreakTest
-NotebookFileLineBreakTest
-NotebookDataPosition[       157,          7]
-NotebookDataLength[     50196,       1369]
-NotebookOptionsPosition[     46296,       1245]
-NotebookOutlinePosition[     47145,       1274]
-CellTagsIndexPosition[     47017,       1268]
-WindowFrame->Normal*)
-
-(* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{
+   RowBox[{"InputNotebook", "[", "]"}], ",", 
+   RowBox[{"PrivateNotebookOptions", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<FileOutlineCache\>\"", "\[Rule]", "False"}], "}"}]}], ",", 
+   RowBox[{"TrackCellChangeTimes", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6388563871255903`*^9, 3.638856387127136*^9}}],
+
 Cell[BoxData[
  RowBox[{"<<", "FeynCalcFormLink`"}]], "Input",
  CellChangeTimes->{{3.564031448655687*^9, 3.5640314490456877`*^9}, {
@@ -43,7 +34,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.5642989416050158`*^9},
+ CellChangeTimes->{3.638856397719782*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -59,23 +50,25 @@ Cell[BoxData[
  CellChangeTimes->{{3.564032132596687*^9, 3.564032147540708*^9}, 
    3.564034045059966*^9, 3.564034401900975*^9, 3.564034436041524*^9, {
    3.5640345357991667`*^9, 3.5640345553461947`*^9}, 3.5640506130776215`*^9, 
-   3.5642610478422318`*^9, 3.564298941728031*^9}],
+   3.5642610478422318`*^9, 3.564298941728031*^9, 3.638817638984531*^9, 
+   3.638856397890862*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.002`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.023`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.002, 
+   "Time needed by FORM : ", 0.023, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{{3.564032132596687*^9, 3.564032147540708*^9}, 
    3.564034045059966*^9, 3.564034401900975*^9, 3.564034436041524*^9, {
    3.5640345357991667`*^9, 3.5640345553461947`*^9}, 3.5640506130776215`*^9, 
-   3.5642610478422318`*^9, 3.5642989417315316`*^9}],
+   3.5642610478422318`*^9, 3.564298941728031*^9, 3.638817638984531*^9, 
+   3.638856397892776*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -83,27 +76,30 @@ Cell[BoxData[
  CellChangeTimes->{{3.564032132596687*^9, 3.564032147540708*^9}, 
    3.564034045059966*^9, 3.564034401900975*^9, 3.564034436041524*^9, {
    3.5640345357991667`*^9, 3.5640345553461947`*^9}, 3.5640506130776215`*^9, 
-   3.5642610478422318`*^9, 3.5642989417340317`*^9}],
+   3.5642610478422318`*^9, 3.564298941728031*^9, 3.638817638984531*^9, 
+   3.638856397894495*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.15`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.2`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.15, 
+   "Total wall clock time used: ", 0.2, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{{3.564032132596687*^9, 3.564032147540708*^9}, 
    3.564034045059966*^9, 3.564034401900975*^9, 3.564034436041524*^9, {
    3.5640345357991667`*^9, 3.5640345553461947`*^9}, 3.5640506130776215`*^9, 
-   3.5642610478422318`*^9, 3.564298941738532*^9}]
+   3.5642610478422318`*^9, 3.564298941728031*^9, 3.638817638984531*^9, 
+   3.638856397895767*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox["4", TraditionalForm]], "Output",
- CellChangeTimes->{3.564261047623831*^9, 3.564298941741533*^9},
+ CellChangeTimes->{3.564261047623831*^9, 3.564298941741533*^9, 
+  3.6388176390618563`*^9, 3.638856398000692*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -126,7 +122,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.5642989417665358`*^9},
+ CellChangeTimes->{3.638856398196856*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -143,16 +139,17 @@ Cell[BoxData[
   3.5640315032147636`*^9, 3.5640319861674643`*^9, 3.564032194438774*^9, 
    3.5640340669554977`*^9, {3.564034423244006*^9, 3.5640344361815243`*^9}, {
    3.5640345359591675`*^9, 3.5640345555161953`*^9}, 3.564050613250122*^9, 
-   3.564261048076232*^9, 3.564298941861548*^9}],
+   3.564261048076232*^9, 3.564298941861548*^9, 3.638817639377843*^9, 
+   3.638856398353791*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.002`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.003`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.002, 
+   "Time needed by FORM : ", 0.003, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
@@ -160,7 +157,8 @@ string."],
   3.5640315032147636`*^9, 3.5640319861674643`*^9, 3.564032194438774*^9, 
    3.5640340669554977`*^9, {3.564034423244006*^9, 3.5640344361815243`*^9}, {
    3.5640345359591675`*^9, 3.5640345555161953`*^9}, 3.564050613250122*^9, 
-   3.564261048076232*^9, 3.5642989418650484`*^9}],
+   3.564261048076232*^9, 3.564298941861548*^9, 3.638817639377843*^9, 
+   3.638856398444932*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -169,28 +167,31 @@ Cell[BoxData[
   3.5640315032147636`*^9, 3.5640319861674643`*^9, 3.564032194438774*^9, 
    3.5640340669554977`*^9, {3.564034423244006*^9, 3.5640344361815243`*^9}, {
    3.5640345359591675`*^9, 3.5640345555161953`*^9}, 3.564050613250122*^9, 
-   3.564261048076232*^9, 3.564298941891052*^9}],
+   3.564261048076232*^9, 3.564298941861548*^9, 3.638817639377843*^9, 
+   3.6388563985109787`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.11`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.19`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.11, 
+   "Total wall clock time used: ", 0.19, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.5640315032147636`*^9, 3.5640319861674643`*^9, 3.564032194438774*^9, 
    3.5640340669554977`*^9, {3.564034423244006*^9, 3.5640344361815243`*^9}, {
    3.5640345359591675`*^9, 3.5640345555161953`*^9}, 3.564050613250122*^9, 
-   3.564261048076232*^9, 3.5642989419005527`*^9}]
+   3.564261048076232*^9, 3.564298941861548*^9, 3.638817639377843*^9, 
+   3.638856398584566*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox["8", TraditionalForm]], "Output",
- CellChangeTimes->{3.5642610479046316`*^9, 3.5642989419105544`*^9},
+ CellChangeTimes->{3.5642610479046316`*^9, 3.5642989419105544`*^9, 
+  3.638817639803503*^9, 3.638856398668646*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -214,7 +215,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.564298941934557*^9},
+ CellChangeTimes->{3.638856398827895*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -230,23 +231,23 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503304764*^9, 3.5640344363615246`*^9, {3.5640345361391673`*^9, 
    3.564034555676195*^9}, 3.5640506134401226`*^9, 3.564261048591033*^9, 
-   3.56429894203557*^9}],
+   3.56429894203557*^9, 3.6388176404182377`*^9, 3.6388563989887*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.005`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.007`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.005, 
+   "Time needed by FORM : ", 0.007, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503304764*^9, 3.5640344363615246`*^9, {3.5640345361391673`*^9, 
    3.564034555676195*^9}, 3.5640506134401226`*^9, 3.564261048591033*^9, 
-   3.5642989420585732`*^9}],
+   3.56429894203557*^9, 3.6388176404182377`*^9, 3.638856399067795*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -254,28 +255,29 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503304764*^9, 3.5640344363615246`*^9, {3.5640345361391673`*^9, 
    3.564034555676195*^9}, 3.5640506134401226`*^9, 3.564261048591033*^9, 
-   3.5642989420685744`*^9}],
+   3.56429894203557*^9, 3.6388176404182377`*^9, 3.6388563991439953`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.12`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.22`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.12, 
+   "Total wall clock time used: ", 0.22, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503304764*^9, 3.5640344363615246`*^9, {3.5640345361391673`*^9, 
    3.564034555676195*^9}, 3.5640506134401226`*^9, 3.564261048591033*^9, 
-   3.5642989420795755`*^9}]
+   3.56429894203557*^9, 3.6388176404182377`*^9, 3.638856399214085*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"4", " ", "m"}], TraditionalForm]], "Output",
- CellChangeTimes->{3.5642610482634325`*^9, 3.5642989420915775`*^9},
+ CellChangeTimes->{3.5642610482634325`*^9, 3.5642989420915775`*^9, 
+  3.638817640831319*^9, 3.638856399304489*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -307,7 +309,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.564298942118081*^9},
+ CellChangeTimes->{3.638856399622341*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -323,23 +325,23 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503514764*^9, 3.564034436611525*^9, {3.5640345363691673`*^9, 
    3.5640345558261957`*^9}, 3.5640506136301227`*^9, 3.564261049261834*^9, 
-   3.5642989422165933`*^9}],
+   3.5642989422165933`*^9, 3.638817641341902*^9, 3.63885639981848*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.002`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.004`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.002, 
+   "Time needed by FORM : ", 0.004, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503514764*^9, 3.564034436611525*^9, {3.5640345363691673`*^9, 
    3.5640345558261957`*^9}, 3.5640506136301227`*^9, 3.564261049261834*^9, 
-   3.5642989422681*^9}],
+   3.5642989422165933`*^9, 3.638817641341902*^9, 3.638856399885631*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -347,37 +349,47 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503514764*^9, 3.564034436611525*^9, {3.5640345363691673`*^9, 
    3.5640345558261957`*^9}, 3.5640506136301227`*^9, 3.564261049261834*^9, 
-   3.5642989422791014`*^9}],
+   3.5642989422165933`*^9, 3.638817641341902*^9, 3.6388563999659147`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.12`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.26`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.12, 
+   "Total wall clock time used: ", 0.26, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503514764*^9, 3.564034436611525*^9, {3.5640345363691673`*^9, 
    3.5640345558261957`*^9}, 3.5640506136301227`*^9, 3.564261049261834*^9, 
-   3.5642989422901025`*^9}]
+   3.5642989422165933`*^9, 3.638817641341902*^9, 3.638856400036676*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox[
   RowBox[{
-   RowBox[{"4", " ", "m", " ", "M"}], "+", 
    RowBox[{"4", " ", 
-    FormBox[
-     RowBox[{
-      FormBox["p",
-       TraditionalForm], "\[CenterDot]", 
-      FormBox["q",
-       TraditionalForm]}],
-     TraditionalForm]}]}], TraditionalForm]], "Output",
- CellChangeTimes->{3.564261048965433*^9, 3.564298942302104*^9},
+    RowBox[{"(", 
+     FormBox[
+      RowBox[{
+       FormBox[
+        OverscriptBox[
+         FormBox["p",
+          TraditionalForm], "_"],
+        TraditionalForm], 
+       FormBox["\<\"\[CenterDot]\"\>",
+        TraditionalForm], 
+       FormBox[
+        OverscriptBox[
+         FormBox["q",
+          TraditionalForm], "_"],
+        TraditionalForm]}],
+      TraditionalForm], ")"}]}], "+", 
+   RowBox[{"4", " ", "m", " ", "M"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.564261048965433*^9, 3.564298942302104*^9, 
+  3.638817641662705*^9, 3.638856400197815*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -421,7 +433,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.564298942328107*^9},
+ CellChangeTimes->{3.6388564003604393`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -437,23 +449,23 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503694764*^9, 3.5640344368515253`*^9, {3.564034536599168*^9, 
    3.5640345560261955`*^9}, 3.5640506138201227`*^9, 3.564261049683035*^9, 
-   3.564298942579139*^9}],
+   3.564298942579139*^9, 3.638817642044096*^9, 3.6388564005235977`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.002`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.003`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.002, 
+   "Time needed by FORM : ", 0.003, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503694764*^9, 3.5640344368515253`*^9, {3.564034536599168*^9, 
    3.5640345560261955`*^9}, 3.5640506138201227`*^9, 3.564261049683035*^9, 
-   3.5642989426086426`*^9}],
+   3.564298942579139*^9, 3.638817642044096*^9, 3.6388564005956182`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -461,27 +473,28 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031503694764*^9, 3.5640344368515253`*^9, {3.564034536599168*^9, 
    3.5640345560261955`*^9}, 3.5640506138201227`*^9, 3.564261049683035*^9, 
-   3.5642989426216445`*^9}],
+   3.564298942579139*^9, 3.638817642044096*^9, 3.638856400674164*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.27`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.2`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.27, 
+   "Total wall clock time used: ", 0.2, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031503694764*^9, 3.5640344368515253`*^9, {3.564034536599168*^9, 
    3.5640345560261955`*^9}, 3.5640506138201227`*^9, 3.564261049683035*^9, 
-   3.5642989426346464`*^9}]
+   3.564298942579139*^9, 3.638817642044096*^9, 3.638856400746169*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox["True", TraditionalForm]], "Output",
- CellChangeTimes->{3.564261049386634*^9, 3.564298942649648*^9},
+ CellChangeTimes->{3.564261049386634*^9, 3.564298942649648*^9, 
+  3.6388176424139633`*^9, 3.638856400823143*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -508,7 +521,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.5642989428006673`*^9},
+ CellChangeTimes->{3.638856401124711*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -524,23 +537,23 @@ Cell[BoxData[
  CellChangeTimes->{
   3.5640315040747647`*^9, 3.5640344372240257`*^9, {3.5640345368491683`*^9, 
    3.5640345562261963`*^9}, 3.564050614030123*^9, 3.564261050478636*^9, 
-   3.5642989429026804`*^9}],
+   3.5642989429026804`*^9, 3.6388176428441687`*^9, 3.638856401269326*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.002`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.005`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.002, 
+   "Time needed by FORM : ", 0.005, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.5640315040747647`*^9, 3.5640344372240257`*^9, {3.5640345368491683`*^9, 
    3.5640345562261963`*^9}, 3.564050614030123*^9, 3.564261050478636*^9, 
-   3.564298942922683*^9}],
+   3.5642989429026804`*^9, 3.6388176428441687`*^9, 3.638856401345071*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -548,46 +561,49 @@ Cell[BoxData[
  CellChangeTimes->{
   3.5640315040747647`*^9, 3.5640344372240257`*^9, {3.5640345368491683`*^9, 
    3.5640345562261963`*^9}, 3.564050614030123*^9, 3.564261050478636*^9, 
-   3.564298942934184*^9}],
+   3.5642989429026804`*^9, 3.6388176428441687`*^9, 3.638856401420081*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.12`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+    "0.21`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
 and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.12, 
+   "Total wall clock time used: ", 0.21, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.5640315040747647`*^9, 3.5640344372240257`*^9, {3.5640345368491683`*^9, 
    3.5640345562261963`*^9}, 3.564050614030123*^9, 3.564261050478636*^9, 
-   3.564298942946186*^9}]
+   3.5642989429026804`*^9, 3.6388176428441687`*^9, 3.63885640156658*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"4", " ", 
-   SuperscriptBox["\[Epsilon]", 
-    RowBox[{
-     FormBox[
-      FormBox["\[Mu]",
-       TraditionalForm],
-      TraditionalForm], 
-     FormBox[
-      FormBox["\[Nu]",
-       TraditionalForm],
-      TraditionalForm], 
-     FormBox[
-      FormBox["\[Rho]",
-       TraditionalForm],
-      TraditionalForm], 
-     FormBox[
-      FormBox["\[Sigma]",
-       TraditionalForm],
-      TraditionalForm]}]]}], TraditionalForm]], "Output",
- CellChangeTimes->{3.5642610502446356`*^9, 3.5642989429586873`*^9},
+   FormBox[
+    SuperscriptBox["\[Epsilon]", 
+     RowBox[{
+      FormBox[
+       FormBox["\[Mu]",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox[
+       FormBox["\[Nu]",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox[
+       FormBox["\[Rho]",
+        TraditionalForm],
+       TraditionalForm], 
+      FormBox[
+       FormBox["\[Sigma]",
+        TraditionalForm],
+       TraditionalForm]}]],
+    TraditionalForm]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.5642610502446356`*^9, 3.5642989429586873`*^9, 
+  3.6388176432103453`*^9, 3.6388564016399097`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -602,11 +618,11 @@ Cell[BoxData[
 
 Cell[BoxData[
  StyleBox["\<\"$LeviCivitaSign is by default set to -1 which corresponds to \
-the convention \\nTr[LeviCivita[a,b,c,d,5]] = -4*I*Eps[a,b,c,d].\\nSetting \
-$LeviCivitaSign=I  will switch to the FORM-convention.\"\>", "MSG"]], "Print",\
- "PrintUsage",
- CellChangeTimes->{3.564298943104206*^9},
- CellTags->"Info3564302542-4905743"]
+the convention\\nTr[LeviCivita[a,b,c,d,5]] = -4*I*Eps[a,b,c,d].\\nSetting \
+$LeviCivitaSign=I  will switch to the FORM-convention.\"\>", 
+  "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.638856402008135*^9},
+ CellTags->"Info3638863601-4510690"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -619,7 +635,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031504324765*^9, 3.5640344376815267`*^9, {3.564034537311169*^9, 
    3.564034556527197*^9}, 3.5640506142801237`*^9, 3.564261051742238*^9, 
-   3.564298943159713*^9}]
+   3.564298943159713*^9, 3.638817643707056*^9, 3.6388564022770863`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -654,7 +670,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031504364765*^9, 3.564034437731527*^9, {3.5640345373411694`*^9, 
    3.5640345565571966`*^9}, 3.5640506143201237`*^9, 3.5642610519606385`*^9, 
-   3.564298943199718*^9}]
+   3.564298943199718*^9, 3.638817643900456*^9, 3.638856402482038*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -668,7 +684,8 @@ Cell[BoxData[
       RowBox[{
       "\[Mu]", ",", "\[Nu]", ",", "\[Rho]", ",", "\[Sigma]", ",", "\[Alpha]", 
        ",", "\[Beta]", ",", "5"}], "]"}], "]"}], ",", 
-    RowBox[{"Print", "\[Rule]", "False"}]}], "]"}], "//", "Factor"}]], "Input"],
+    RowBox[{"Print", "\[Rule]", "False"}]}], "]"}], "//", 
+  "Factor"}]], "Input"],
 
 Cell[BoxData[
  FormBox[
@@ -676,135 +693,249 @@ Cell[BoxData[
    RowBox[{"(", 
     RowBox[{
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Alpha]", "\[Beta]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Mu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Nu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Rho]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Sigma]",
-          TraditionalForm],
-         TraditionalForm]}]]}], "+", 
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Alpha]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Beta]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Rho]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Sigma]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "+", 
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Alpha]", "\[Sigma]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Mu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Nu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Rho]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Beta]",
-          TraditionalForm],
-         TraditionalForm]}]]}], "-", 
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Alpha]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Sigma]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Rho]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Beta]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "-", 
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Beta]", "\[Sigma]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Mu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Nu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Rho]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Alpha]",
-          TraditionalForm],
-         TraditionalForm]}]]}], "+", 
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Beta]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Sigma]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Rho]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Alpha]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "+", 
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Mu]", "\[Nu]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Rho]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Sigma]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Alpha]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Beta]",
-          TraditionalForm],
-         TraditionalForm]}]]}], "-", 
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Mu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Nu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Rho]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Sigma]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Alpha]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Beta]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "-", 
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Mu]", "\[Rho]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Nu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Sigma]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Alpha]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Beta]",
-          TraditionalForm],
-         TraditionalForm]}]]}], "+", 
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Mu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Rho]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Nu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Sigma]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Alpha]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Beta]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}], "+", 
      RowBox[{
-      SuperscriptBox["g", 
-       RowBox[{"\[Nu]", "\[Rho]"}]], " ", 
-      SuperscriptBox["\[Epsilon]", 
-       RowBox[{
-        FormBox[
-         FormBox["\[Mu]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Sigma]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Alpha]",
-          TraditionalForm],
-         TraditionalForm], 
-        FormBox[
-         FormBox["\[Beta]",
-          TraditionalForm],
-         TraditionalForm]}]]}]}], ")"}]}], TraditionalForm]], "Output",
+      FormBox[
+       FormBox[
+        SuperscriptBox[
+         OverscriptBox["g", "_"], 
+         RowBox[{
+          FormBox[
+           FormBox[
+            FormBox["\[Nu]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm], 
+          FormBox[
+           FormBox[
+            FormBox["\[Rho]",
+             TraditionalForm],
+            TraditionalForm],
+           TraditionalForm]}]],
+        TraditionalForm],
+       TraditionalForm], " ", 
+      FormBox[
+       SuperscriptBox["\[Epsilon]", 
+        RowBox[{
+         FormBox[
+          FormBox["\[Mu]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Sigma]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Alpha]",
+           TraditionalForm],
+          TraditionalForm], 
+         FormBox[
+          FormBox["\[Beta]",
+           TraditionalForm],
+          TraditionalForm]}]],
+       TraditionalForm]}]}], ")"}]}], TraditionalForm]], "Output",
  CellChangeTimes->{
   3.5640315045347652`*^9, 3.564034437881527*^9, {3.564034537501169*^9, 
    3.5640345567271967`*^9}, 3.5640506144801235`*^9, 3.5642610522726393`*^9, 
-   3.5642989433597383`*^9}]
+   3.5642989433597383`*^9, 3.638817644187043*^9, 3.638856402764407*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -949,7 +1080,8 @@ Cell[BoxData[
   RowBox[{"formres", "=", 
    RowBox[{"Factor", "[", 
     RowBox[{"FeynCalcFormLink", "[", 
-     RowBox[{"DiracTrace", "[", "test", "]"}], "]"}], "]"}]}], "]"}]], "Input"],
+     RowBox[{"DiracTrace", "[", "test", "]"}], "]"}], "]"}]}], 
+  "]"}]], "Input"],
 
 Cell["\<\
 Symbols e,Gsubf,m;
@@ -1061,7 +1193,7 @@ contract 0;
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
- CellChangeTimes->{3.5642989435517626`*^9},
+ CellChangeTimes->{3.6388564032357883`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1077,23 +1209,23 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031504834766*^9, 3.5640344380715275`*^9, {3.5640345376811695`*^9, 
    3.564034557017197*^9}, 3.5640506147921247`*^9, 3.5642610528966403`*^9, 
-   3.564298943831298*^9}],
+   3.564298943831298*^9, 3.638817648677552*^9, 3.6388564033525877`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
-   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.005`", 
+   RowBox[{"\<\"Time needed by FORM : \"\>", "\[InvisibleSpace]", "0.006`", 
     "\[InvisibleSpace]", "\<\" seconds. FORM finished. Got the result back to \
 Mathematica as a string.\"\>"}],
    SequenceForm[
-   "Time needed by FORM : ", 0.005, 
+   "Time needed by FORM : ", 0.006, 
     " seconds. FORM finished. Got the result back to Mathematica as a \
 string."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031504834766*^9, 3.5640344380715275`*^9, {3.5640345376811695`*^9, 
    3.564034557017197*^9}, 3.5640506147921247`*^9, 3.5642610528966403`*^9, 
-   3.5642989438452997`*^9}],
+   3.564298943831298*^9, 3.638817648677552*^9, 3.638856403394277*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Start translation to Mathematica / FeynCalc syntax\"\>", 
@@ -1101,56 +1233,80 @@ Cell[BoxData[
  CellChangeTimes->{
   3.564031504834766*^9, 3.5640344380715275`*^9, {3.5640345376811695`*^9, 
    3.564034557017197*^9}, 3.5640506147921247`*^9, 3.5642610528966403`*^9, 
-   3.5642989438568015`*^9}],
+   3.564298943831298*^9, 3.638817648677552*^9, 3.6388564034316053`*^9}],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Total wall clock time used: \"\>", "\[InvisibleSpace]", 
-    "0.47000000000000003`", 
-    "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica and \
-FeynCalc finished.\"\>"}],
+    "0.45`", "\[InvisibleSpace]", "\<\" seconds. Translation to Mathematica \
+and FeynCalc finished.\"\>"}],
    SequenceForm[
-   "Total wall clock time used: ", 0.47000000000000003`, 
+   "Total wall clock time used: ", 0.45, 
     " seconds. Translation to Mathematica and FeynCalc finished."],
    Editable->False], TraditionalForm]], "Print",
  CellChangeTimes->{
   3.564031504834766*^9, 3.5640344380715275`*^9, {3.5640345376811695`*^9, 
    3.564034557017197*^9}, 3.5640506147921247`*^9, 3.5642610528966403`*^9, 
-   3.5642989438663025`*^9}]
+   3.564298943831298*^9, 3.638817648677552*^9, 3.638856403481398*^9}]
 }, Open  ]],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"{", 
-   RowBox[{"0.47155989999999997630553139060793910176`5.6941367802090985", ",", 
+   RowBox[{"0.46999600000000002486544303792470600456`5.692694075076363", ",", 
     RowBox[{"-", 
      FractionBox[
       RowBox[{
        SuperscriptBox["e", "4"], " ", 
        SubsuperscriptBox["G", "f", "2"], " ", 
-       FormBox[
-        RowBox[{
-         FormBox["n",
-          TraditionalForm], "\[CenterDot]", 
-         FormBox["p2",
-          TraditionalForm]}],
-        TraditionalForm], " ", 
+       RowBox[{"(", 
+        FormBox[
+         RowBox[{
+          FormBox[
+           OverscriptBox[
+            FormBox["n",
+             TraditionalForm], "_"],
+           TraditionalForm], 
+          FormBox["\<\"\[CenterDot]\"\>",
+           TraditionalForm], 
+          FormBox[
+           OverscriptBox[
+            FormBox["p2",
+             TraditionalForm], "_"],
+           TraditionalForm]}],
+         TraditionalForm], ")"}], " ", 
        SuperscriptBox[
         RowBox[{"(", 
          RowBox[{
           FormBox[
            RowBox[{
-            FormBox["k1",
-             TraditionalForm], "\[CenterDot]", 
-            FormBox["p1",
+            FormBox[
+             OverscriptBox[
+              FormBox["k1",
+               TraditionalForm], "_"],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             OverscriptBox[
+              FormBox["p1",
+               TraditionalForm], "_"],
              TraditionalForm]}],
            TraditionalForm], "+", 
           FormBox[
            RowBox[{
-            FormBox["k2",
-             TraditionalForm], "\[CenterDot]", 
-            FormBox["p1",
+            FormBox[
+             OverscriptBox[
+              FormBox["k2",
+               TraditionalForm], "_"],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             OverscriptBox[
+              FormBox["p1",
+               TraditionalForm], "_"],
              TraditionalForm]}],
            TraditionalForm]}], ")"}], "2"]}], 
       RowBox[{"3", " ", "\[Pi]", " ", 
@@ -1158,18 +1314,34 @@ Cell[BoxData[
         RowBox[{"(", 
          FormBox[
           RowBox[{
-           FormBox["k1",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p1",
+           FormBox[
+            OverscriptBox[
+             FormBox["k1",
+              TraditionalForm], "_"],
+            TraditionalForm], 
+           FormBox["\<\"\[CenterDot]\"\>",
+            TraditionalForm], 
+           FormBox[
+            OverscriptBox[
+             FormBox["p1",
+              TraditionalForm], "_"],
             TraditionalForm]}],
           TraditionalForm], ")"}], "2"], " ", 
        SuperscriptBox[
         RowBox[{"(", 
          FormBox[
           RowBox[{
-           FormBox["k2",
-            TraditionalForm], "\[CenterDot]", 
-           FormBox["p1",
+           FormBox[
+            OverscriptBox[
+             FormBox["k2",
+              TraditionalForm], "_"],
+            TraditionalForm], 
+           FormBox["\<\"\[CenterDot]\"\>",
+            TraditionalForm], 
+           FormBox[
+            OverscriptBox[
+             FormBox["p1",
+              TraditionalForm], "_"],
             TraditionalForm]}],
           TraditionalForm], ")"}], "2"], " ", 
        SuperscriptBox[
@@ -1177,27 +1349,52 @@ Cell[BoxData[
          RowBox[{
           FormBox[
            RowBox[{
-            FormBox["k1",
-             TraditionalForm], "\[CenterDot]", 
-            FormBox["k2",
+            FormBox[
+             OverscriptBox[
+              FormBox["k1",
+               TraditionalForm], "_"],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             OverscriptBox[
+              FormBox["k2",
+               TraditionalForm], "_"],
              TraditionalForm]}],
            TraditionalForm], "-", 
           FormBox[
            RowBox[{
-            FormBox["k1",
-             TraditionalForm], "\[CenterDot]", 
-            FormBox["p1",
+            FormBox[
+             OverscriptBox[
+              FormBox["k1",
+               TraditionalForm], "_"],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             OverscriptBox[
+              FormBox["p1",
+               TraditionalForm], "_"],
              TraditionalForm]}],
            TraditionalForm], "-", 
           FormBox[
            RowBox[{
-            FormBox["k2",
-             TraditionalForm], "\[CenterDot]", 
-            FormBox["p1",
+            FormBox[
+             OverscriptBox[
+              FormBox["k2",
+               TraditionalForm], "_"],
+             TraditionalForm], 
+            FormBox["\<\"\[CenterDot]\"\>",
+             TraditionalForm], 
+            FormBox[
+             OverscriptBox[
+              FormBox["p1",
+               TraditionalForm], "_"],
              TraditionalForm]}],
            TraditionalForm]}], ")"}], "2"]}]]}]}], "}"}], 
   TraditionalForm]], "Output",
- CellChangeTimes->{3.56426105267824*^9, 3.564298943883805*^9},
+ CellChangeTimes->{3.56426105267824*^9, 3.564298943883805*^9, 
+  3.638817648856904*^9, 3.6388564035624733`*^9},
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1219,12 +1416,12 @@ Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "0.68108650000000003910116674887831322849`5.853802185378984", ",", 
+   "1.62451100000000003831246431218460202217`6.231322569695084", ",", 
     "True"}], "}"}], TraditionalForm]], "Output",
  CellChangeTimes->{
   3.5640315057167673`*^9, 3.5640344390765285`*^9, {3.5640345383811703`*^9, 
    3.564034557517198*^9}, 3.5640506155821257`*^9, 3.564261056094646*^9, 
-   3.564298944658903*^9}]
+   3.564298944658903*^9, 3.638817650709902*^9, 3.6388564054963427`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1235,144 +1432,19 @@ Cell[BoxData[
 Cell[BoxData[
  StyleBox["\<\"SetSF set the default Format output type to StandardForm.\"\>",
    "MSG"]], "Print", "PrintUsage",
- CellChangeTimes->{3.564298944801922*^9},
- CellTags->"Info3564302544-4905743"]
+ CellChangeTimes->{3.6388564056618147`*^9},
+ CellTags->"Info3638863605-4510690"]
 }, Open  ]],
 
 Cell[BoxData[
  RowBox[{"SetSF", ";"}]], "Input"]
 }, Open  ]]
 },
-WindowSize->{1904, 945},
-WindowMargins->{{-2070, Automatic}, {36, Automatic}},
+WindowSize->{1280, 714},
+WindowMargins->{{-9, Automatic}, {Automatic, -8}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
 ShowSelection->True,
-Magnification:>FEPrivate`If[
-  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.5, 1.5 Inherited],
-FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
-StyleDefinitions->FrontEnd`FileName[{"Article"}, "Preprint.nb", 
-  CharacterEncoding -> "WindowsANSI"]
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb",
+$CellContext`TrackCellChangeTimes -> False
 ]
-(* End of Notebook Content *)
-
-(* Internal cache information *)
-(*CellTagsOutline
-CellTagsIndex->{
- "Info3564302542-4905743"->{
-  Cell[22017, 602, 342, 6, 122, "Print",
-   CellTags->"Info3564302542-4905743"]},
- "Info3564302544-4905743"->{
-  Cell[46011, 1234, 206, 4, 63, "Print",
-   CellTags->"Info3564302544-4905743"]}
- }
-*)
-(*CellTagsIndex
-CellTagsIndex->{
- {"Info3564302542-4905743", 46801, 1259},
- {"Info3564302544-4905743", 46912, 1262}
- }
-*)
-(*NotebookFileOutline
-Notebook[{
-Cell[557, 20, 178, 3, 43, "Input"],
-Cell[CellGroupData[{
-Cell[760, 27, 100, 1, 104, "Section"],
-Cell[863, 30, 106, 2, 43, "Input"],
-Cell[972, 34, 613, 17, 186, "Program"],
-Cell[CellGroupData[{
-Cell[1610, 55, 371, 6, 32, "Print"],
-Cell[1984, 63, 686, 14, 32, "Print"],
-Cell[2673, 79, 381, 6, 32, "Print"],
-Cell[3057, 87, 666, 13, 32, "Print"]
-}, Open  ]],
-Cell[3738, 103, 507, 8, 42, "Output"],
-Cell[4248, 113, 106, 2, 43, "Input"],
-Cell[4357, 117, 615, 17, 186, "Program"],
-Cell[CellGroupData[{
-Cell[4997, 138, 400, 7, 32, "Print"],
-Cell[5400, 147, 715, 15, 32, "Print"],
-Cell[6118, 164, 408, 7, 32, "Print"],
-Cell[6529, 173, 697, 14, 32, "Print"]
-}, Open  ]],
-Cell[7241, 190, 511, 8, 42, "Output"],
-Cell[7755, 200, 106, 2, 43, "Input"],
-Cell[7864, 204, 623, 18, 208, "Program"],
-Cell[CellGroupData[{
-Cell[8512, 226, 299, 6, 32, "Print"],
-Cell[8814, 234, 615, 14, 32, "Print"],
-Cell[9432, 250, 310, 6, 32, "Print"],
-Cell[9745, 258, 597, 13, 32, "Print"]
-}, Open  ]],
-Cell[10357, 274, 534, 9, 42, "Output"],
-Cell[10894, 285, 318, 9, 43, "Input"],
-Cell[11215, 296, 668, 19, 229, "Program"],
-Cell[CellGroupData[{
-Cell[11908, 319, 302, 6, 32, "Print"],
-Cell[12213, 327, 611, 14, 32, "Print"],
-Cell[12827, 343, 310, 6, 32, "Print"],
-Cell[13140, 351, 597, 13, 32, "Print"]
-}, Open  ]],
-Cell[13752, 367, 741, 18, 42, "Output"],
-Cell[14496, 387, 676, 21, 43, "Input"],
-Cell[15175, 410, 668, 19, 229, "Program"],
-Cell[CellGroupData[{
-Cell[15868, 433, 300, 6, 32, "Print"],
-Cell[16171, 441, 615, 14, 32, "Print"],
-Cell[16789, 457, 310, 6, 32, "Print"],
-Cell[17102, 465, 597, 13, 32, "Print"]
-}, Open  ]],
-Cell[17714, 481, 510, 8, 42, "Output"],
-Cell[18227, 491, 216, 5, 43, "Input"],
-Cell[18446, 498, 680, 18, 208, "Program"],
-Cell[CellGroupData[{
-Cell[19151, 520, 304, 6, 32, "Print"],
-Cell[19458, 528, 615, 14, 32, "Print"],
-Cell[20076, 544, 310, 6, 32, "Print"],
-Cell[20389, 552, 597, 13, 32, "Print"]
-}, Open  ]],
-Cell[21001, 568, 930, 27, 42, "Output"],
-Cell[CellGroupData[{
-Cell[21956, 599, 58, 1, 43, "Input"],
-Cell[22017, 602, 342, 6, 122, "Print",
- CellTags->"Info3564302542-4905743"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[22396, 613, 41, 0, 43, "Input"],
-Cell[22440, 615, 277, 6, 42, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[22754, 626, 162, 4, 43, "Input"],
-Cell[22919, 632, 670, 24, 42, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23626, 661, 357, 9, 43, "Input"],
-Cell[23986, 672, 3605, 134, 49, "Output"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[27640, 812, 33, 0, 104, "Section"],
-Cell[27676, 814, 6936, 130, 1708, "Input"],
-Cell[34615, 946, 218, 5, 43, "Input"],
-Cell[34836, 953, 5889, 116, 1605, "Program"],
-Cell[CellGroupData[{
-Cell[40750, 1073, 302, 6, 32, "Print"],
-Cell[41055, 1081, 617, 14, 32, "Print"],
-Cell[41675, 1097, 312, 6, 32, "Print"],
-Cell[41990, 1105, 635, 14, 32, "Print"]
-}, Open  ]],
-Cell[42640, 1122, 2674, 83, 71, "Output"],
-Cell[CellGroupData[{
-Cell[45339, 1209, 214, 6, 43, "Input"],
-Cell[45556, 1217, 367, 9, 42, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[45960, 1231, 48, 1, 43, "Input"],
-Cell[46011, 1234, 206, 4, 63, "Print",
- CellTags->"Info3564302544-4905743"]
-}, Open  ]],
-Cell[46232, 1241, 48, 1, 43, "Input"]
-}, Open  ]]
-}
-]
-*)
-
-(* End of internal cache information *)
