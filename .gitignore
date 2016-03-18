@@ -1,0 +1,6 @@
+/src/*.o
+/src/FormLinktm.c
+/src/FormLinkLinux
+/src/FormLinkOSX
+/src/FormLinkWindows
+form.set
