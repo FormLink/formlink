@@ -58,6 +58,9 @@ FLReadString::usage =
 FormLink::formlinknotfound =
 "The FormLink executable was not found here: `1`"
 
+FormLink::loadfail =
+"Failed to load the FormLink executable `1`.";
+
 Form2M::usage =
 "Form2M[string, replist] translates string by ToExpression[ StringReplace[string, replist], \
 TraditionalForm]  to Mathematica."
@@ -195,10 +198,21 @@ FormStart[formexe_String:"", OptionsPattern[]] :=
 				formsetup = makeFormsetup[OptionValue[FormSetup]];
 				(* if formsetup is different from what is in form.set, export it: *)
 				Export["form.set", formsetup, "Text"] /; Import["form.set","Text"] =!= formsetup;
-				$FormLink = Install[ FileBaseName[FileNameTake[flinkfile]]<>If[ getSystem[]==="windows",
-													".exe",
-													""
-												]];
+
+				(* 	If we don't get an answer after 5 secs, then most likely it is because the MathLink
+					executable is not suitable ans Install got frozen.*)
+				TimeConstrained[
+					$FormLink = Install[ FileBaseName[FileNameTake[flinkfile]]<>
+						If[	getSystem[]==="windows",
+							".exe",
+							""
+						]
+					],
+				5];
+				If[Head[$FormLink]=!=LinkObject,
+					Message[FormLink::loadfail,flinkfile];
+					Abort[]
+				];
 				ResetDirectory[],
 				Message[FormLink::formlinknotfound, flinkfile]
 			];
