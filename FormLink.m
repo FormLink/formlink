@@ -122,7 +122,13 @@ FormStart[formexe_String:"", opts:OptionsPattern[]] :=
 								p /. True -> Print
 							]]@OptionValue[Print];
 		If[ (*Head[$FormLink]=!=LinkObject,*) (* this is not enough, since after FormStop[] the Head of $FormLink will still be LinkObject *) !ListQ[Quiet[LinkPatterns[$FormLink]]],
-			flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink"}];
+
+			If[$VersionNumber >= 10.3,
+				flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink"}],
+				flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLinkLegacy"}]
+			];
+
+
 			flinkfile = flinkfile <> If[ getSystem[]==="windows",
 										".exe",
 										""
@@ -134,7 +140,7 @@ FormStart[formexe_String:"", opts:OptionsPattern[]] :=
 				formsetup = makeFormsetup[OptionValue[FormSetup]];
 				(* if formsetup is different from what is in form.set, export it: *)
 				Export["form.set", formsetup, "Text"] /; Import["form.set","Text"] =!= formsetup;
-				$FormLink = Install[ "FormLink"<>If[ getSystem[]==="windows",
+				$FormLink = Install[ FileBaseName[FileNameTake[flinkfile]]<>If[ getSystem[]==="windows",
 													".exe",
 													""
 												]];
