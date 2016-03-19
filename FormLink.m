@@ -126,7 +126,7 @@ getSystem[] :=
 makeFormExe[formexein_String/; StringLength[formexein]>0] :=
 	If[	FileExistsQ[formexein],
 		formexein,
-		Message[FormLink::formnotfound, formexe]
+		Message[FormLink::formnotfound, formexein]
 	];
 
 makeFormExe[""] :=
@@ -280,7 +280,7 @@ RunForm[script_String, opts:OptionsPattern[]] :=
 RunForm[script_String, more__] :=
 	RunForm[{script}, more];
 
-RunForm[script_List/;MatchQ[script,{__String}], fn_String, formexe_String:"", opts:OptionsPattern[]] :=
+RunForm[script_List/;MatchQ[script,{__String}], fn_String, formexe_String:"", OptionsPattern[]] :=
 	Module[ {fs, logfile, formsetup, scriptj},
 		fs = OpenWrite[fn];
 		scriptj = StringJoin @@ script;
@@ -353,7 +353,7 @@ holdidentityrep = {
 	Hold[Identity][x_] :> x(*, Hold[Identity][x_,y__] :> Hold[x,y]*)
 };
 
-Form2M[frm_String, replist_:$Form2M] :=
+Form2M[frm_String, _:$Form2M] :=
 	(Replace[ToExpression[ "("<>fixstr[frm]<>")",
 		TraditionalForm],$Failed -> frm]) /. holdidentityrep /. $DotPowerFix;
 
