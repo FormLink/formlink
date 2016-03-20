@@ -1,27 +1,28 @@
-﻿# FormLink
+# FormLink
 
 [![license: LGPLv3](https://img.shields.io/badge/license-LGPLv3-brightgreen.svg)](https://github.com/FormLink/formlink/LICENSE.md)
 
 FormLink is a Mathematica package to link Mathematica with FORM.
 
-FormLink was developed by Feng Feng and Rolf Mertig. The code is maintained
-by Feng Feng, Rolf Mertig and Vladyslav Shtabovenko
+FormLink was developed by Feng Feng and Rolf Mertig. The code is maintained by Feng Feng, Rolf Mertig and Vladyslav Shtabovenko
 
 # Installation
 
+	Import["https://raw.githubusercontent.com/FormLink/formlink/master/install.m"]
+	InstallFormLink[]
+
+
 # Compilation
 
-Th
+	make clean && make && make install
 
 # License
 
 FormLink is covered by the GNU Lesser General Public License 3.
 
-Copyright (C) 2012-2015 Feng Feng
-
-Copyright (C) 2012-2015 Rolf Mertig
-
-Copyright (C) 2015 Vladyslav Shtabovenko
+Copyright (C) 2012-2016 Feng Feng 
+Copyright (C) 2012-2016 Rolf Mertig 
+Copyright (C) 2015-2016 Vladyslav Shtabovenko
 
 FormLink is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
