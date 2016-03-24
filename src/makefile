@@ -22,11 +22,15 @@
 #
 # OSX Mathematica 8 64-bits
 #
-# make clean && make MLINKDIR=/Applications/Mathematica8.app/SystemFiles/Links/MathLink/DeveloperKit MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
+# make clean && make MLINKDIR=/Applications/Mathematica8.app/SystemFiles/Links/MathLink/DeveloperKit CADDSDIR=/Applications/Mathematica8.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions CLIB=stdc++ MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
 #
 # OSX Mathematica 9 64-bits
 #
-# make clean && make OUTPUT=FormLinkLegacy MLINKDIR=/Applications/Mathematica9.app/SystemFiles/Links/MathLink/DeveloperKit MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
+# make clean && make OUTPUT=FormLinkLegacy MLINKDIR=/Applications/Mathematica9.app/SystemFiles/Links/MathLink/DeveloperKit CLIB=stdc++ MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
+#
+# OSX Mathematica 10.3 64-bits
+#
+# make clean && make MLINKDIR=/Applications/Mathematica10.3.app/Contents/SystemFiles/Links/MathLink/DeveloperKit CLIB=stdc++ && make install OUTPUT=FormLink103
 #
 # Windows Mathematica 8 32-bits
 #
@@ -39,7 +43,10 @@
 
 
 UNAME := $(shell uname)
-UNAMEWIN := $(shell uname -o)
+
+ifneq ($(UNAME), Darwin)
+	UNAMEWIN := $(shell uname -o)
+endif
 ARCH := $(shell uname -m)
 
 ifeq ($(UNAME), Linux)
@@ -71,6 +78,7 @@ else
     CC=/usr/local/bin/gcc-5
     SYS=MacOSX-x86-64
     MLLIB = MLi4
+    CLIB = c++
     INSTALLDIR = bin/macosx64
     MLINKDIR= /Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit
     BINARIES = FormLinkOSX
@@ -126,7 +134,7 @@ FormLinkLinux : FormLinktm.o FormLink.o
 	${CC} ${EXTRA_CFLAGS} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -ldl -l:libuuid.so.1 -l${MLLIB} -lm -lpthread -lrt -lstdc++  -o FormLinkLinux
 
 FormLinkOSX : FormLinktm.o FormLink.o
-	${CC} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -l${MLLIB} -lstdc++ -framework Foundation -o FormLinkOSX
+	${CC} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -l${MLLIB} -l${CLIB} -framework Foundation -o FormLinkOSX
 
 FormLinkWindows : FormLinktm.o FormLink.o
 	${CC} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} ${EXTRALIBS} -lgcc -l${MLLIB} -o $@

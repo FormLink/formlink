@@ -181,7 +181,16 @@ FormStart[formexe_String:"", OptionsPattern[]] :=
 		If[!ListQ[Quiet[LinkPatterns[$FormLink]]],
 
 			If[$VersionNumber >= 10.3,
-				flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink"}],
+
+				If[getSystem[]==="macosx64",
+					If[$VersionNumber >= 10.4,
+						flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink"}],
+						flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink103"}]
+
+					],
+					flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLink"}]
+				],
+
 				flinkfile = FileNameJoin[{$FormLinkDir, "bin", getSystem[], "FormLinkLegacy"}]
 			];
 
