@@ -14,6 +14,72 @@ FormLink was developed by Feng Feng and Rolf Mertig. The code is maintained by F
 
 # Compilation
 
+If you use the automatic installer via `InstallFormLink[]` there should be no necessity to recompile anything. However, if for some reasons you need to recompile FormLink binaries, following instructions should be useful.
+
+## Linux
+
+Apart from Mathematica, you need to have  __libdl__, __libuuid__, __libm__, __libpthread__ , __librt__, __libstdc++__ installed on your system.
+
+### Mathematica 8 32-bits
+
+	 make clean && make ARCH=i686 MLINKDIR=/usr/local/Wolfram/Mathematica/8.0/SystemFiles/Links/MathLink/DeveloperKit MLLIB=ML32i3 && make OUTPUT=FormLinkLegacy ARCH=i686 install
+
+
+### Mathematica 8 64-bits
+
+	 make clean && make MLINKDIR=/usr/local/Wolfram/Mathematica/8.0/SystemFiles/Links/MathLink/DeveloperKit MLLIB=ML64i3 && make OUTPUT=FormLinkLegacy install
+
+
+### Mathematica 9 32-bits
+
+	make clean && make ARCH=i686 MLINKDIR=/usr/local/Wolfram/Mathematica/9.0/SystemFiles/Links/MathLink/DeveloperKit MLLIB=ML32i3 && make OUTPUT=FormLinkLegacy ARCH=i686 install
+
+### Mathematica 9 64-bits
+
+	make clean && make MLINKDIR=/usr/local/Wolfram/Mathematica/9.0/SystemFiles/Links/MathLink/DeveloperKit MLLIB=ML64i3 && make OUTPUT=FormLinkLegacy install
+
+### Mathematica 10 32-bits
+
+	make clean && make ARCH=i686 && make ARCH=i686 install
+
+### Mathematica 10 64-bits
+
+	make clean && make && make install
+
+## OS X
+
+Apart from Mathematica, you need to have  __gcc5__ (from homebrew etc.) intalled on your system.
+
+### Mathematica 8
+
+	make clean && make MLINKDIR=/Applications/Mathematica8.app/SystemFiles/Links/MathLink/DeveloperKit CADDSDIR=/Applications/Mathematica8.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions CLIB=stdc++ MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
+
+### Mathematica 9
+
+	make clean && make OUTPUT=FormLinkLegacy MLINKDIR=/Applications/Mathematica9.app/SystemFiles/Links/MathLink/DeveloperKit CLIB=stdc++ MLLIB=MLi3 && make OUTPUT=FormLinkLegacy install
+
+### Mathematica 10.3
+
+	make clean && make MLINKDIR=/Applications/Mathematica10.3.app/Contents/SystemFiles/Links/MathLink/DeveloperKit CLIB=stdc++ && make install OUTPUT=FormLink103
+
+### Mathematica 10.4
+
+	make clean && make && make install
+
+## Windows
+
+Apart from Mathematica, you need to have  __cygwin__ (32-bit version!) intalled on your system. The compilation is done in the cygwin terminal.
+
+### Mathematica 8
+
+	make clean && make OUTPUT=FormLinkLegacy.exe MLINKDIR="/cygdrive/c/Program\ Files/Wolfram\ Research/Mathematica/8.0/SystemFiles/Links/MathLink/DeveloperKit" MLLIB=ml32i3m && make OUTPUT=FormLinkLegacy.exe install
+
+### Mathematica 9
+
+	make clean && make  OUTPUT=FormLinkLegacy.exe MLINKDIR="/cygdrive/c/Program\ Files/Wolfram\ Research/Mathematica/9.0/SystemFiles/Links/MathLink/DeveloperKit" MLLIB=ml32i3m && make OUTPUT=FormLinkLegacy.exe install
+
+### Mathematica 10
+
 	make clean && make && make install
 
 # License
