@@ -81,8 +81,9 @@ Cell[BoxData[
            
            ImageSize->
             Dynamic[{
-             Automatic, 1.35 CurrentValue["FontCapHeight"]/
-              AbsoluteCurrentValue[Magnification]}],
+             Automatic, 
+              1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+               Magnification])}],
            PlotRangePadding->None],
           "RGBColor[0.44444444444444453, 0.22222222222222227, 0.]"],
          Appearance->None,
@@ -1323,9 +1324,8 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["\<\
-Index and Vector (Local F=p1(i1)*(p2(i1)+p3(i3))*(p1(i2)+p2(i3));)\
-\>", "Subsubsection",
- CellChangeTimes->{{3.5641679054812527`*^9, 3.5641679109125633`*^9}}],
+Index and Vector (Local F=p1(i1)*(p2(i2)+p3(i2))*(p1(i1)+p2(i1));)\
+\>", "Subsubsection"],
 
 Cell[CellGroupData[{
 
@@ -1333,11 +1333,9 @@ Cell[BoxData[
  RowBox[{"tmp", "=", 
   RowBox[{
   "FormLink", "[", 
-   "\"\<\n               Index i1,i2,i3;\n               Vector p1,p2,p3;\n   \
-            Local F=p1(i1)*(p2(i1)+p3(i3))*(p1(i2)+p2(i3));\n\>\"", 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.5641134315655355`*^9, 3.564113434236539*^9}, {
-  3.564167931692752*^9, 3.5641679558111315`*^9}}],
+   "\"\<\n               Index i1,i2;\n               Vector p1,p2,p3;\n      \
+         Local F=p1(i1)*(p2(i2)+p3(i2))*(p1(i1)+p2(i1));\n\>\"", 
+   "]"}]}]], "Input"],
 
 Cell[CellGroupData[{
 
@@ -1345,20 +1343,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0017000000000000001`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0016`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0017000000000000001`, " sec"],
+Mathematica: ", 0.0016, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1247`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.17`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1247, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.17, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1366,18 +1364,17 @@ Cell[BoxData[
  FormBox[
   RowBox[{
    RowBox[{
-    RowBox[{"p1", "(", "i1", ")"}], " ", 
-    RowBox[{"p1", "(", "i2", ")"}], " ", 
-    RowBox[{"p3", "(", "i3", ")"}]}], "+", 
-   RowBox[{
-    RowBox[{"p1", "(", "i1", ")"}], " ", 
-    RowBox[{"p2", ".", "p3"}]}], "+", 
-   RowBox[{
-    RowBox[{"p1", "(", "i2", ")"}], " ", 
+    RowBox[{"p3", "(", "i2", ")"}], " ", 
     RowBox[{"p1", ".", "p2"}]}], "+", 
    RowBox[{
-    RowBox[{"p2", "(", "i3", ")"}], " ", 
-    RowBox[{"p1", ".", "p2"}]}]}], TraditionalForm]], "Output",
+    RowBox[{"p1", ".", "p1"}], " ", 
+    RowBox[{"p2", "(", "i2", ")"}]}], "+", 
+   RowBox[{
+    RowBox[{"p2", "(", "i2", ")"}], " ", 
+    RowBox[{"p1", ".", "p2"}]}], "+", 
+   RowBox[{
+    RowBox[{"p1", ".", "p1"}], " ", 
+    RowBox[{"p3", "(", "i2", ")"}]}]}], TraditionalForm]], "Output",
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1393,7 +1390,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.564113436546542*^9, 3.564113439737547*^9}}],
 
 Cell["\<\
-p2 . p3*p1[i1] + p1 . p2*p1[i2] + p1 . p2*p2[i3] + p1[i1]*p1[i2]*p3[i3]\
+p1 . p1*p2[i2] + p1 . p2*p2[i2] + p1 . p1*p3[i2] + p1 . p2*p3[i2]\
 \>", "Output"]
 }, Open  ]],
 
@@ -1403,8 +1400,8 @@ Cell[BoxData[
  RowBox[{"tmp", "=", 
   RowBox[{"FormLink", "[", 
    RowBox[{
-   "\"\<\n\t\t\t\t\tIndex i1,i2,i3;\n\t\t\t\t\tVector p1,p2,p3;\n\t\t\t\t\t\
-Local F=p1(i1)*(p2(i1)+p3(i3))*(p1(i2)+p2(i3));\n\>\"", ",", 
+   "\"\<\n\t\t\t\t\tIndex i1,i2;\n\t\t\t\t\tVector p1,p2,p3;\n\t\t\t\t\tLocal \
+F=p1(i1)*(p2(i2)+p3(i2))*(p1(i1)+p2(i1));\n\>\"", ",", 
     RowBox[{"Form2M", "\[Rule]", "Identity"}]}], "]"}]}]], "Input"],
 
 Cell[CellGroupData[{
@@ -1413,26 +1410,28 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0018000000000000002`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0016`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0018000000000000002`, " sec"],
+Mathematica: ", 0.0016, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1274`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.17070000000000002`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1274, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.17070000000000002`, 
+    " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
 Cell[BoxData[
- FormBox["\<\"(p1(i1)*p1(i2)*p3(i3)+p1(i1)*p2.p3+p1(i2)*p1.p2+p2(i3)*p1.p2)\"\
-\>", TraditionalForm]], "Output",
+ FormBox["\<\"(p2(i2)*p1.p1+p2(i2)*p1.p2+p3(i2)*p1.p1+p3(i2)*p1.p2)\"\>", 
+  TraditionalForm]], "Output",
  LineColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  FrontFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
  BackFaceColor->RGBColor[0.44444444444444453`, 0.22222222222222227`, 0.],
@@ -1446,9 +1445,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"tmp", "//", "InputForm"}]], "Input"],
 
-Cell["\<\
-\"(p1(i1)*p1(i2)*p3(i3)+p1(i1)*p2.p3+p1(i2)*p1.p2+p2(i3)*p1.p2)\"\
-\>", "Output"]
+Cell["\"(p2(i2)*p1.p1+p2(i2)*p1.p2+p3(i2)*p1.p1+p3(i2)*p1.p2)\"", "Output"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1786,8 +1783,8 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
-WindowSize->{939, 740},
-WindowMargins->{{Automatic, 410}, {Automatic, -20}},
+WindowSize->{939, 830},
+WindowMargins->{{698, Automatic}, {Automatic, 36}},
 PrivateNotebookOptions->{"FileOutlineCache"->False,
 "VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 ShowSelection->True,
