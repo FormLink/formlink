@@ -46,7 +46,7 @@ Cell[BoxData[
 in Form and returns the result to Mathematica. If only one Local assignment \
 is present the return value is that result. If more Form Local variables are \
 present, a list of results is returned.\"\>", "MSG"]], "Print", "PrintUsage",
- CellTags->"Info-60579e2e-213b-4f54-87ed-e63d71363a0b"]
+ CellTags->"Info-4903d0f3-beb4-4cde-bf11-9b9682338938"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -81,9 +81,8 @@ Cell[BoxData[
            
            ImageSize->
             Dynamic[{
-             Automatic, 
-              1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-               Magnification])}],
+             Automatic, 1.35 CurrentValue["FontCapHeight"]/
+              AbsoluteCurrentValue[Magnification]}],
            PlotRangePadding->None],
           "RGBColor[0.44444444444444453, 0.22222222222222227, 0.]"],
          Appearance->None,
@@ -135,7 +134,7 @@ Cell[BoxData[
 is set by default to $FormSetup. $FormSetup can be modified to change \
 TempDir, etc. .Currently a form.set file is written next to the FORM \
 executable. \"\>", "MSG"]], "Print", "PrintUsage",
- CellTags->"Info-a19c31e3-9d40-463b-80e5-8dccbd647f18"]
+ CellTags->"Info-bbccf312-40d7-40cd-8a1c-280bd4c05846"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -147,7 +146,7 @@ Cell[BoxData[
  StyleBox["\<\"Form2M[string, replist] translates string by ToExpression[ \
 StringReplace[string, replist], TraditionalForm]  to Mathematica.\"\>", 
   "MSG"]], "Print", "PrintUsage",
- CellTags->"Info-87ef4164-4277-453d-b6dd-eee7d386700f"]
+ CellTags->"Info-05690cba-16d4-4c3b-a7d3-85abec6e8eb3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -158,7 +157,7 @@ Cell[BoxData[
 Cell[BoxData[
  StyleBox["\<\"$Form2M is a list ob basic Form -> Mathematica syntax changes.\
 \"\>", "MSG"]], "Print", "PrintUsage",
- CellTags->"Info-c04e66ed-2ba4-49f5-a280-1a49b9b729f7"]
+ CellTags->"Info-6f3cc2eb-6c3d-4626-82ff-2a2f9e83c3d8"]
 }, Open  ]],
 
 Cell["$Form2M can be adjusted dynamically or in Config.m", "Text"]
@@ -191,21 +190,21 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0012000000000000001`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0015`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0012000000000000001`, " sec"],
+Mathematica: ", 0.0015, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.12560000000000002`", 
+    "\[InvisibleSpace]", "0.20620000000000002`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.12560000000000002`, 
+   "Translation done. Total wall clock time needed: ", 0.20620000000000002`, 
     " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
@@ -322,21 +321,21 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0012000000000000001`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0012000000000000001`, " sec"],
+Mathematica: ", 0.001, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.11900000000000001`", 
+    "\[InvisibleSpace]", "0.11510000000000001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.11900000000000001`, 
+   "Translation done. Total wall clock time needed: ", 0.11510000000000001`, 
     " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
@@ -412,20 +411,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0429`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0473`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0429, " sec"],
+Mathematica: ", 0.0473, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.298`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.3276`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.298, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.3276, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]]
 }, Open  ]],
@@ -521,9 +520,11 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1236`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.15510000000000002`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1236, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.15510000000000002`, 
+    " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -579,20 +580,22 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0018000000000000002`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0014`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0018000000000000002`, " sec"],
+Mathematica: ", 0.0014, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1332`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.15180000000000002`", 
+    "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1332, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.15180000000000002`, 
+    " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -623,11 +626,9 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.15230000000000002`", 
-    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1322`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.15230000000000002`, 
-    " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1322, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -667,20 +668,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0008`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0006000000000000001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0008, " sec"],
+Mathematica: ", 0.0006000000000000001, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.184`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1776`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.184, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1776, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -721,20 +722,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0011`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.002`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0011, " sec"],
+Mathematica: ", 0.002, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.8465`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.5959`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.8465, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.5959, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -814,20 +815,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.9736`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.9583`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.9736, " sec"],
+Mathematica: ", 0.9583, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "4.8002`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "4.8587`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 4.8002, " sec"],
+   "Translation done. Total wall clock time needed: ", 4.8587, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]]
 }, Open  ]],
@@ -868,7 +869,7 @@ The first argument script can be a string or a list of strings. An optional \
 third argument can be give to use a specific FORM executable, otherwise a \
 FORM executable from $FormLinkDir/bin is used.\"\>", 
   "MSG"]], "Print", "PrintUsage",
- CellTags->"Info-849010dd-cf85-454f-bb55-3c00c781f7bd"]
+ CellTags->"Info-63403f09-1ba2-4457-943a-f0145fa7fb2a"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -881,7 +882,7 @@ Cell[BoxData[{
 (a+b+c+d+e+f+g)^21;\n           \>\""}], ";"}]}], "Input"],
 
 Cell["\<\
-FORM 4.1 (Jan 13 2014) 64-bits                   Run: Fri May 13 16:21:02 \
+FORM 4.1 (Jan 13 2014) 64-bits                   Run: Sat May 21 22:13:13 \
 2016
     On ShortStats;
     Symbols a,b,c,d,e,f,g;
@@ -891,8 +892,8 @@ FORM 4.1 (Jan 13 2014) 64-bits                   Run: Fri May 13 16:21:02 \
       0.14s        1>    100000       100000:   5231680 F 
       0.29s        1>    200000       200000:  10404076 F 
       0.43s        1>    296010       296010:  14926380 F 
-      0.47s        1>    296010-->    296010:  14926308 F 
-  0.47 sec out of 0.47 sec\
+      0.50s        1>    296010-->    296010:  14926308 F 
+  0.50 sec out of 0.51 sec\
 \>", "Program",
  GeneratedCell->True,
  CellAutoOverwrite->True,
@@ -1065,20 +1066,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0015`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0013000000000000002`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0015, " sec"],
+Mathematica: ", 0.0013000000000000002`, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.1267`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1862`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.1267, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1862, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1198,22 +1199,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0036000000000000003`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0034000000000000002`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0036000000000000003`, " sec"],
+Mathematica: ", 0.0034000000000000002`, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.19920000000000002`", 
-    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.2093`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.19920000000000002`, 
-    " sec"],
+   "Translation done. Total wall clock time needed: ", 0.2093, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1279,22 +1278,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0025`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0015`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0025, " sec"],
+Mathematica: ", 0.0015, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.12810000000000002`", 
-    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1521`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.12810000000000002`, 
-    " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1521, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1343,20 +1340,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0016`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0012000000000000001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0016, " sec"],
+Mathematica: ", 0.0012000000000000001`, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.17`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1501`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.17, " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1501, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1410,22 +1407,20 @@ Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"FORM and FormRead finished, time needed before translating to \
-Mathematica: \"\>", "\[InvisibleSpace]", "0.0016`", 
+Mathematica: \"\>", "\[InvisibleSpace]", "0.0017000000000000001`", 
     "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
    "FORM and FormRead finished, time needed before translating to \
-Mathematica: ", 0.0016, " sec"],
+Mathematica: ", 0.0017000000000000001`, " sec"],
    Editable->False], TraditionalForm]], "Print"],
 
 Cell[BoxData[
  FormBox[
   InterpretationBox[
    RowBox[{"\<\"Translation done. Total wall clock time needed: \"\>", 
-    "\[InvisibleSpace]", "0.17070000000000002`", 
-    "\[InvisibleSpace]", "\<\" sec\"\>"}],
+    "\[InvisibleSpace]", "0.1419`", "\[InvisibleSpace]", "\<\" sec\"\>"}],
    SequenceForm[
-   "Translation done. Total wall clock time needed: ", 0.17070000000000002`, 
-    " sec"],
+   "Translation done. Total wall clock time needed: ", 0.1419, " sec"],
    Editable->False], TraditionalForm]], "Print"]
 }, Open  ]],
 
@@ -1448,127 +1443,14 @@ Cell[BoxData[
 Cell["\"(p2(i2)*p1.p1+p2(i2)*p1.p2+p3(i2)*p1.p1+p3(i2)*p1.p2)\"", "Output"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$FeynCalcStartupMessages", "=", "False"}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Needs", "[", "\"\<FeynCalcFormLink`\>\"", 
   "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"$TypesettingDim4", "=", "\"\<\>\""}], ";"}]}], "Input"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{
-    StyleBox["\<\"FeynCalc \"\>", "Text",
-     StripOnInput->False,
-     FontWeight->Bold], "\[InvisibleSpace]", 
-    StyleBox["\<\"9.0.1. For help, use the \"\>", "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox[
-     TagBox[
-      ButtonBox[
-       RowBox[{"documentation", " ", "center"}],
-       BaseStyle->"Link",
-       ButtonData:>"paclet:FeynCalc/",
-       ButtonNote->"paclet:FeynCalc/"],
-      DisplayForm], "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox["\<\", check out the \"\>", "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox[
-     TagBox[
-      ButtonBox["wiki",
-       BaseStyle->"Hyperlink",
-       ButtonData:>{
-         URL["https://github.com/FeynCalc/feyncalc/wiki"], None},
-       ButtonNote->"https://github.com/FeynCalc/feyncalc/wiki"],
-      DisplayForm], "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox["\<\" or write to the \"\>", "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox[
-     TagBox[
-      ButtonBox[
-       RowBox[{"mailing", " ", 
-        RowBox[{"list", "."}]}],
-       BaseStyle->"Hyperlink",
-       ButtonData:>{
-         URL["http://www.feyncalc.org/forum/"], None},
-       ButtonNote->"http://www.feyncalc.org/forum/"],
-      DisplayForm], "Text",
-     StripOnInput->False]}],
-   SequenceForm[
-    Style["FeynCalc ", "Text", Bold], 
-    Style["9.0.1. For help, use the ", "Text"], 
-    Style[
-     DisplayForm[
-      ButtonBox[
-      "documentation center", BaseStyle -> "Link", ButtonData :> 
-       "paclet:FeynCalc/", ButtonNote -> "paclet:FeynCalc/"]], "Text"], 
-    Style[", check out the ", "Text"], 
-    Style[
-     DisplayForm[
-      ButtonBox["wiki", ButtonData :> {
-         URL["https://github.com/FeynCalc/feyncalc/wiki"], None}, BaseStyle -> 
-       "Hyperlink", ButtonNote -> 
-       "https://github.com/FeynCalc/feyncalc/wiki"]], "Text"], 
-    Style[" or write to the ", "Text"], 
-    Style[
-     DisplayForm[
-      ButtonBox["mailing list.", ButtonData :> {
-         URL["http://www.feyncalc.org/forum/"], None}, BaseStyle -> 
-       "Hyperlink", ButtonNote -> "http://www.feyncalc.org/forum/"]], "Text"]],
-   Editable->False], TraditionalForm]], "Print"],
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{
-    StyleBox["\<\"See also the supplied \"\>", "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox[
-     TagBox[
-      ButtonBox[
-       RowBox[{"examples", "."}],
-       BaseStyle->"Hyperlink",
-       ButtonFunction:>SystemOpen[
-         FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]],
-       Evaluator->Automatic,
-       Method->"Preemptive"],
-      DisplayForm], "Text",
-     StripOnInput->False], "\[InvisibleSpace]", 
-    StyleBox["\<\" If you use FeynCalc in your research, please cite\"\>", 
-     "Text",
-     StripOnInput->False]}],
-   SequenceForm[
-    Style["See also the supplied ", "Text"], 
-    Style[
-     DisplayForm[
-      ButtonBox[
-      "examples.", BaseStyle -> "Hyperlink", ButtonFunction :> SystemOpen[
-         FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]], Evaluator -> 
-       Automatic, Method -> "Preemptive"]], "Text"], 
-    Style[" If you use FeynCalc in your research, please cite", "Text"]],
-   Editable->False], TraditionalForm]], "Print"],
-
-Cell[BoxData[
- FormBox[
-  StyleBox["\<\" \[Bullet] V. Shtabovenko, R. Mertig and F. Orellana, TUM-EFT \
-71/15, arXiv:1601.01167\"\>", "Text",
-   StripOnInput->False], TraditionalForm]], "Print"],
-
-Cell[BoxData[
- FormBox[
-  StyleBox["\<\" \[Bullet] R. Mertig, M. B\[ODoubleDot]hm, and A. Denner, \
-Comput. Phys. Commun., 64, 345-359, 1991.\"\>", "Text",
-   StripOnInput->False], TraditionalForm]], "Print"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[BoxData[""], "Input"],
 
 Cell[CellGroupData[{
 
@@ -1588,9 +1470,7 @@ Cell[BoxData[
       RowBox[{"i1", " ", "\[Rule]", 
        RowBox[{"LorentzIndex", "[", "i1", "]"}]}], ",", " ", 
       RowBox[{"i2", " ", "\[Rule]", 
-       RowBox[{"LorentzIndex", "[", "i2", "]"}]}], ",", " ", 
-      RowBox[{"i3", " ", "\[Rule]", 
-       RowBox[{"LorentzIndex", "[", "i3", "]"}]}]}], "}"}]}], 
+       RowBox[{"LorentzIndex", "[", "i2", "]"}]}]}], "}"}]}], 
    "]"}]}]], "Input"],
 
 Cell[BoxData[
@@ -1602,23 +1482,7 @@ Cell[BoxData[
       SuperscriptBox[
        FormBox[
         OverscriptBox[
-         FormBox["p1",
-          TraditionalForm], ""],
-        TraditionalForm], 
-       FormBox[
-        FormBox[
-         FormBox["i1",
-          TraditionalForm],
-         TraditionalForm],
-        TraditionalForm]],
-      TraditionalForm],
-     TraditionalForm], " ", 
-    FormBox[
-     FormBox[
-      SuperscriptBox[
-       FormBox[
-        OverscriptBox[
-         FormBox["p1",
+         FormBox["p3",
           TraditionalForm], ""],
         TraditionalForm], 
        FormBox[
@@ -1629,17 +1493,42 @@ Cell[BoxData[
         TraditionalForm]],
       TraditionalForm],
      TraditionalForm], " ", 
+    RowBox[{"(", 
+     FormBox[
+      RowBox[{
+       FormBox[
+        OverscriptBox[
+         FormBox["p1",
+          TraditionalForm], ""],
+        TraditionalForm], 
+       FormBox["\<\"\[CenterDot]\"\>",
+        TraditionalForm], 
+       FormBox[
+        OverscriptBox[
+         FormBox["p2",
+          TraditionalForm], ""],
+        TraditionalForm]}],
+      TraditionalForm], ")"}]}], "+", 
+   RowBox[{
+    FormBox[
+     SuperscriptBox[
+      FormBox[
+       OverscriptBox[
+        FormBox["p1",
+         TraditionalForm], ""],
+       TraditionalForm], "2"],
+     TraditionalForm], " ", 
     FormBox[
      FormBox[
       SuperscriptBox[
        FormBox[
         OverscriptBox[
-         FormBox["p3",
+         FormBox["p2",
           TraditionalForm], ""],
         TraditionalForm], 
        FormBox[
         FormBox[
-         FormBox["i3",
+         FormBox["i2",
           TraditionalForm],
          TraditionalForm],
         TraditionalForm]],
@@ -1651,40 +1540,7 @@ Cell[BoxData[
       SuperscriptBox[
        FormBox[
         OverscriptBox[
-         FormBox["p1",
-          TraditionalForm], ""],
-        TraditionalForm], 
-       FormBox[
-        FormBox[
-         FormBox["i1",
-          TraditionalForm],
-         TraditionalForm],
-        TraditionalForm]],
-      TraditionalForm],
-     TraditionalForm], " ", 
-    RowBox[{"(", 
-     FormBox[
-      RowBox[{
-       FormBox[
-        OverscriptBox[
          FormBox["p2",
-          TraditionalForm], ""],
-        TraditionalForm], 
-       FormBox["\<\"\[CenterDot]\"\>",
-        TraditionalForm], 
-       FormBox[
-        OverscriptBox[
-         FormBox["p3",
-          TraditionalForm], ""],
-        TraditionalForm]}],
-      TraditionalForm], ")"}]}], "+", 
-   RowBox[{
-    FormBox[
-     FormBox[
-      SuperscriptBox[
-       FormBox[
-        OverscriptBox[
-         FormBox["p1",
           TraditionalForm], ""],
         TraditionalForm], 
        FormBox[
@@ -1713,37 +1569,29 @@ Cell[BoxData[
       TraditionalForm], ")"}]}], "+", 
    RowBox[{
     FormBox[
+     SuperscriptBox[
+      FormBox[
+       OverscriptBox[
+        FormBox["p1",
+         TraditionalForm], ""],
+       TraditionalForm], "2"],
+     TraditionalForm], " ", 
+    FormBox[
      FormBox[
       SuperscriptBox[
        FormBox[
         OverscriptBox[
-         FormBox["p2",
+         FormBox["p3",
           TraditionalForm], ""],
         TraditionalForm], 
        FormBox[
         FormBox[
-         FormBox["i3",
+         FormBox["i2",
           TraditionalForm],
          TraditionalForm],
         TraditionalForm]],
       TraditionalForm],
-     TraditionalForm], " ", 
-    RowBox[{"(", 
-     FormBox[
-      RowBox[{
-       FormBox[
-        OverscriptBox[
-         FormBox["p1",
-          TraditionalForm], ""],
-        TraditionalForm], 
-       FormBox["\<\"\[CenterDot]\"\>",
-        TraditionalForm], 
-       FormBox[
-        OverscriptBox[
-         FormBox["p2",
-          TraditionalForm], ""],
-        TraditionalForm]}],
-      TraditionalForm], ")"}]}]}], TraditionalForm]], "Output"]
+     TraditionalForm]}]}], TraditionalForm]], "Output"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1752,9 +1600,8 @@ Cell[BoxData[
  RowBox[{"tmp2", "//", "InputForm"}]], "Input"],
 
 Cell["\<\
-FV[p1, i1]*FV[p1, i2]*FV[p3, i3] + FV[p1, i2]*SP[p1, p2] + FV[p2, i3]*SP[p1, \
-p2] + 
- FV[p1, i1]*SP[p2, p3]\
+FV[p2, i2]*SP[p1, p1] + FV[p3, i2]*SP[p1, p1] + FV[p2, i2]*SP[p1, p2] + 
+ FV[p3, i2]*SP[p1, p2]\
 \>", "Output"]
 }, Open  ]],
 
@@ -1765,12 +1612,10 @@ Cell[BoxData[
   RowBox[{"tmp2", "//", "FCI"}], "//", "InputForm"}]], "Input"],
 
 Cell["\<\
-Pair[LorentzIndex[i1], Momentum[p1]]*Pair[LorentzIndex[i2], Momentum[p1]]*
-  Pair[LorentzIndex[i3], Momentum[p3]] + Pair[LorentzIndex[i2], \
-Momentum[p1]]*
-  Pair[Momentum[p1], Momentum[p2]] + Pair[LorentzIndex[i3], Momentum[p2]]*
-  Pair[Momentum[p1], Momentum[p2]] + Pair[LorentzIndex[i1], Momentum[p1]]*
-  Pair[Momentum[p2], Momentum[p3]]\
+Pair[LorentzIndex[i2], Momentum[p2]]*Pair[Momentum[p1], Momentum[p1]] + 
+ Pair[LorentzIndex[i2], Momentum[p3]]*Pair[Momentum[p1], Momentum[p1]] + 
+ Pair[LorentzIndex[i2], Momentum[p2]]*Pair[Momentum[p1], Momentum[p2]] + 
+ Pair[LorentzIndex[i2], Momentum[p3]]*Pair[Momentum[p1], Momentum[p2]]\
 \>", "Output"]
 }, Open  ]],
 
@@ -1784,7 +1629,7 @@ Cell[BoxData[
 },
 WindowToolbars->"EditBar",
 WindowSize->{939, 830},
-WindowMargins->{{698, Automatic}, {Automatic, 36}},
+WindowMargins->{{688, Automatic}, {Automatic, 3}},
 PrivateNotebookOptions->{"FileOutlineCache"->False,
 "VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 ShowSelection->True,
