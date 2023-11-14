@@ -131,7 +131,7 @@ CCFLAGS=
 all : $(BINARIES)
 
 FormLinkLinux : FormLinktm.o FormLink.o
-	${CC} ${EXTRA_CFLAGS} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -ldl -l:libuuid.so.1 -l${MLLIB} -lm -lpthread -lrt -lstdc++  -o FormLinkLinux
+	${CC} ${EXTRA_CFLAGS} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -ldl -l:libuuid.so.1 -Wl,-Bstatic -l${MLLIB} -Wl,-Bdynamic -lm -lpthread -lrt -lstdc++  -o FormLinkLinux
 
 FormLinkOSX : FormLinktm.o FormLink.o
 	${CC} -I${INCDIR} FormLinktm.o FormLink.o -L${LIBDIR} -l${MLLIB} -l${CLIB} -framework Foundation -o FormLinkOSX
